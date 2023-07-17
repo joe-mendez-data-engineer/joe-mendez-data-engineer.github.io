@@ -136,10 +136,11 @@ body {
 }
 
 .contactButton {
-  color: #fff;
+  color: #7fa4d0;
+  border: solid 3px #7fa4d0;
   font-size: 23px;
   font-weight: 500;  
-  background-color: #7fa4d0;
+  background-color: #fff;
   padding: 11px 70px;
   display: inline-block;
   margin-top: 20px;
@@ -148,7 +149,8 @@ body {
 
 .contactButton:hover {
   text-decoration: none;
-  color:#f9e8a3;
+  color:#fff;
+  background-color: #7fa4d0;
   box-shadow: 0px 4px 3px #f9e8a3 !important;
 }
 
