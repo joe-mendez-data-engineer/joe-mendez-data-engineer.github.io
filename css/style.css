@@ -350,6 +350,7 @@ div#navbarNav.collapse.navbar-collapse {
 .navbar-toggler-icon {
   background: url(../img/icons/menu.svg);
   background-size: 100%;
+  color: #fff;
 }
 
 .fixedNav #navigation {
