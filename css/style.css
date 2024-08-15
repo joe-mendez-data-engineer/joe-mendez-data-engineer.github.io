@@ -497,3 +497,19 @@ a { color: white; text-decoration: none; }
   display:block; 
   margin: 0 auto;
 }
+
+@media screen and (max-width:768px) {
+  font-size: 24px;
+  h5 {
+  font-size: 120%;
+  color: #fff;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h6 {
+  font-size: 120%;
+  color: #000;
+}
+} 
