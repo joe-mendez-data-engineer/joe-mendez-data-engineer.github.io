@@ -51,7 +51,11 @@ body {
   margin-top: 40px;
   font-size: large
 }
-
+.text-box{
+Padding:3vw;
+Border: solid 1px black;
+box-shadow: 12px 12px 2px 1px #7fa4d0;
+}
 .skillsSection.section {
   background-color: #000;
 }
