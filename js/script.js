@@ -11,8 +11,6 @@ function newFunction() {
 
 	$(document).ready(function () {
 
-		$('#slides').superslides({});
-
 
 		$('.owl-carousel').owlCarousel({
 			pagination: false,
