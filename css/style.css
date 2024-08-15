@@ -57,6 +57,7 @@ body {
   padding: 11px 70px;
   border: solid 1px black;
   box-shadow: 12px 12px 2px 1px #7fa4d0;
+  font: fira mono;
 }
 .text-box2 {
   padding: 11px 70px;
@@ -64,6 +65,7 @@ body {
   box-shadow: 12px 12px 2px 1px #7fa4d0;
   background-color: #000000;
   color: #ffffff;
+  font: fira mono;
 }
 
 .skillsSection.section {
@@ -497,19 +499,3 @@ a { color: white; text-decoration: none; }
   display:block; 
   margin: 0 auto;
 }
-
-@media screen and (max-width:768px) {
-  font-size: 24px;
-  h5 {
-  font-size: 120%;
-  color: #fff;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h6 {
-  font-size: 120%;
-  color: #000;
-}
-} 
