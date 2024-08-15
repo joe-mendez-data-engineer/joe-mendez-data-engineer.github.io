@@ -54,9 +54,16 @@ body {
 }
 
 .text-box{
-padding: 11px 70px;
-border: solid 1px black;
-box-shadow: 12px 12px 2px 1px #7fa4d0;
+  padding: 11px 70px;
+  border: solid 1px black;
+  box-shadow: 12px 12px 2px 1px #7fa4d0;
+}
+.text-box2{
+  padding: 11px 70px;
+  border: solid 1px black;
+  box-shadow: 12px 12px 2px 1px #7fa4d0;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .skillsSection.section {
