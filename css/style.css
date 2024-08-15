@@ -145,10 +145,10 @@ box-shadow: 12px 12px 2px 1px #7fa4d0;
   font-size: 23px;
   font-weight: 500;  
   background-color: #fff;
-  padding: 20px 70px;
+  padding: 11px 70px;
   display: inline-block;
   margin-top: 20px;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 
 .contactButton:hover {
