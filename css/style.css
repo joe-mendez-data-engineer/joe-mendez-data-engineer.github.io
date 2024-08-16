@@ -87,6 +87,11 @@ body {
   margin-left: 10px;
 }
 
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 50%;
+}
 .chart {
   position: relative;
   width: 152px;
