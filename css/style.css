@@ -90,7 +90,7 @@ body {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-  min-width: 50%;
+  min-width: 100%;
 }
 .chart {
   position: relative;
