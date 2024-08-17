@@ -51,8 +51,11 @@ body {
 @media only screen and (max-width: 600px) {
   .slides-container2 {
      background: url('/img/joe-mendez-mobile.png');
-      width: 100%;
-      height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 100%;
     }
     .navbar-brand, navbar-brand img {
         width: 50vw;
@@ -127,6 +130,14 @@ body {
 }
 
 .slides-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.slides-container2 {
     display: flex;
     justify-content: center;
     align-items: center;
