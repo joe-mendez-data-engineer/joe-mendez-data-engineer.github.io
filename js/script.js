@@ -118,17 +118,6 @@ function newFunction() {
 
 		});
 
-		window.addEventListener('scroll', function() {
-		    var navigation = document.getElementById('navigation');
-		    if (window.scrollY > window.innerHeight) {
-		        navigation.classList.add('scrolled');
-		    } else {
-		        navigation.classList.remove('scrolled');
-		    }
-		});
-
-
-
 		const nav = $("#navigation");
 		const navTop = nav.offset().top;
 
