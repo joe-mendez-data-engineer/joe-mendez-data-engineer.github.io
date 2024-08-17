@@ -100,17 +100,6 @@ body {
   color: #fff;
 }
 
-.skill {
-  text-align: center;
-  margin: 10px;
-}
-
-.skill img {
-  width: 100px;
-  height: auto;
-  margin: 10px 0;
-}
-
 .slides-container {
   display: flex;
   justify-content: center;
