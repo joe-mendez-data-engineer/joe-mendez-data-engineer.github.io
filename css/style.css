@@ -64,9 +64,14 @@ body {
     }
 }
 
+@media screen and (max-width: 480px) {
+  .slides slides-container img {
+     background: url('../img/joe-mendez-mobile.png');
+    }
+}
 @media only screen and (max-width: 480px) {
   .navbar-brand {
-    width: 65vw;
+    width: 40vw;
     padding-top: 5px; 
     padding-bottom: 5px;
     padding-left: 5px;
