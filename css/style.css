@@ -69,32 +69,70 @@ body {
      background: url('../img/joe-mendez-mobile.png');
     }
 }
-@media only screen and (max-width: 480px) {
-  .navbar-brand {
-    width: 40vw;
-    padding-top: 5px; 
-    padding-bottom: 5px;
-    padding-left: 5px;
+
+/* Navbar */
+#navigation {
+    background-color: #161617cc;
+    padding: 10px 10px;
+    width: 100%;
+    transition: top 0.3s;
+    top: -100px; /* Initially hide the navbar */
+    position: fixed;
+    z-index: 1000;
+}
+
+#navigation.scrolled {
+    top: 0; /* Show the navbar when scrolled */
+}
+
+/* Navbar Brand */
+.navbar-brand img {
+    width: 150px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Larger logo for mobile */
+@media (max-width: 767px) {
+    .navbar-brand img {
+        width: 200px;
     }
 }
 
-.navbar {
-    background-color: #161617cc;
-    padding: 10px 10px;
-    z-index: 100;
+/* Centered Navbar Items */
+.navbar-nav .nav-item {
+    text-align: center;
     width: 100%;
 }
 
-.navbar-brand {
-    width: 25%;
-}
-
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-link {
     color: #fff;
+    padding: 15px;
+    display: block;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-link:hover {
     text-decoration: underline solid #7fa4d0 3.5px;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* CSS for when the page is scrolled */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#landing-section {
+    height: 100vh;
+    background: url('img/joe-mendez-hughes-data-engineer-high-resolution-logo.png') no-repeat center center/cover;
 }
 
 .section {
