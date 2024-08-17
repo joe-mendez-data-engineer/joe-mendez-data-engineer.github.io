@@ -3,7 +3,7 @@ body {
     color: #000;
     background-color: #ffffff !important;
     letter-spacing: 1px;
-    font-family: 'Fira Mono', monospace;
+    font-family: 'Fira Mono', monospace !important;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
