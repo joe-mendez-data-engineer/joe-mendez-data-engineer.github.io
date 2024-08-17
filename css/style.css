@@ -27,22 +27,6 @@ body {
     transform: scaleX(-1);
 }
 
-.titleMessage {
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    top: 50%;
-    z-index: 5;
-    text-align: center;
-    margin-top: -135px;
-}
-
-.titleMessage .heading .main {
-    font-size: 50px;
-    color: #000;
-    letter-spacing: 5px;
-}
-
 .arrow {
     margin: 20px auto 0;
     text-align: center;
@@ -70,33 +54,23 @@ body {
     }
 }
 
-#navigation {
-  background-color: #161617cc;
-  padding: 10px 10px;
-  z-index: 100;
-  width: 100%;
+.navbar {
+    background-color: #161617cc;
+    padding: 10px 10px;
+    z-index: 100;
+    width: 100%;
 }
 
-#navigation li {
-  padding: 0 10px;
-  margin: 0 auto;
+.navbar-brand {
+    width: 25%;
 }
 
-#navigation li a {
-  color: #fff;
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
 }
 
-#navigation li a:hover {
-  text-decoration: underline solid #7fa4d0 3.5px;
-}
-
-div#navbarNav.collapse.navbar-collapse {
-  justify-content: right;
-}
-
-.fixedNav #navigation {
-  position: fixed;
-  top: 0;
+.navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline solid #7fa4d0 3.5px;
 }
 
 /* Larger logo for mobile */
