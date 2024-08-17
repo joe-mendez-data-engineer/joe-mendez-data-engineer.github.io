@@ -65,7 +65,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .slides slides-container img {
+  .slides {
      background: url('../img/joe-mendez-mobile.png');
     }
 }
@@ -122,17 +122,6 @@ body {
 .navbar-toggler-icon {
     background-color: white;
     border-radius: 3px;
-}
-
-/* CSS for when the page is scrolled */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#landing-section {
-    height: 100vh;
-    background: url('img/joe-mendez-hughes-data-engineer-high-resolution-logo.png') no-repeat center center/cover;
 }
 
 .section {
