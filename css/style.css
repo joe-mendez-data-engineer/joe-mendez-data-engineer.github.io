@@ -48,24 +48,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
-.slides-container2 {
-   background: url('/img/joe-mendez-mobile.png');
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px auto;
-      width: 100%;
-  }
-  .navbar-brand, navbar-brand img {
-      width: 50vw;
-      height: auto;
-      padding-top: 5px; 
-      padding-bottom: 5px;
-      padding-left: 5px;
-  }
-}
-
 .navbar {
   background-color: #161617cc;
   padding: 10px 10px;
@@ -94,7 +76,7 @@ body {
   margin-bottom: 30px;
 }
 
-.text-box, .text-box2 {
+.text-box {
   padding: 11px 70px;
   border: solid 1px black;
   box-shadow: 12px 12px 2px 1px #7fa4d0;
@@ -133,16 +115,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
   width: 100%;
-}
-
-.slides-container2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
 }
 
 #pdf-container {
@@ -160,19 +133,22 @@ body {
 }
 
 .contactButton {
+  color: #7fa4d0;
+  border: solid 3px #7fa4d0;
+  font-size: 23px;
+  font-weight: 500;  
+  background-color: #fff;
+  padding: 10px 70px;
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #7fa4d0;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  margin-top: 20px;
+  border-radius: 15px;
 }
 
 .contactButton:hover {
-  background-color: #5f89b0;
+  text-decoration: none;
+  color:#fff;
+  background-color: #7fa4d0;
+  box-shadow: 0px 4px 3px #f9e8a3 !important;
 }
 
 .contactSection {
