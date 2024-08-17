@@ -155,7 +155,6 @@ body {
 .thanksSection {
     background-color: #000;
     color: #fff;
-    padding: 40px 0;
 }
 
 .thanksSection h5 {
@@ -172,7 +171,7 @@ iframe {
   text-align: center;
   border: 2px solid transparent;
   border-top: none;
-  box-shadow: 0px 5px 10px #d4d4d4 ;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   border-radius: 9px;
 }
 
