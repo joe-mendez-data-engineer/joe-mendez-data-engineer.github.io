@@ -66,29 +66,37 @@ body {
 
 @media screen and (max-width: 480px) {
   .slides {
-     background: url('../img/joe-mendez-mobile.png');
+     background: url('img/joe-mendez-mobile.png');
     }
 }
 
-/* Navbar */
 #navigation {
-    background-color: #161617cc;
-    padding: 10px 10px;
-    width: 100%;
-    transition: top 0.3s;
-    top: -100px; /* Initially hide the navbar */
-    position: fixed;
-    z-index: 1000;
+  background-color: #161617cc;
+  padding: 10px 10px;
+  z-index: 100;
+  width: 100%;
 }
 
-#navigation.scrolled {
-    top: 0; /* Show the navbar when scrolled */
+#navigation li {
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
-/* Navbar Brand */
-.navbar-brand img {
-    width: 150px;
-    transition: width 0.3s ease-in-out;
+#navigation li a {
+  color: #fff;
+}
+
+#navigation li a:hover {
+  text-decoration: underline solid #7fa4d0 3.5px;
+}
+
+div#navbarNav.collapse.navbar-collapse {
+  justify-content: right;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
 }
 
 /* Larger logo for mobile */
@@ -96,22 +104,10 @@ body {
     .navbar-brand img {
         width: 200px;
     }
-}
-
-/* Centered Navbar Items */
-.navbar-nav .nav-item {
+    .navbar-nav .nav-item {
     text-align: center;
     width: 100%;
-}
-
-.navbar-nav .nav-link {
-    color: #fff;
-    padding: 15px;
-    display: block;
-}
-
-.navbar-nav .nav-link:hover {
-    text-decoration: underline solid #7fa4d0 3.5px;
+    }
 }
 
 /* Navbar Toggler */
@@ -121,7 +117,7 @@ body {
 
 .navbar-toggler-icon {
     background-color: white;
-    border-radius: 3px;
+    border-radius: 1px;
 }
 
 .section {
