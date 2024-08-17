@@ -73,7 +73,7 @@ body {
 
 @media only screen and (max-width: 450px) {
   .navbar-brand img {
-    width: 75vw;
+    width: 50vw;
     padding-top: 5px; 
     padding-bottom: 5px;
     }
@@ -93,7 +93,6 @@ body {
 
 .navbar-nav .nav-item .nav-link:hover {
     text-decoration: underline solid #7fa4d0 3.5px;
-    margin-top: 2px;
 }
 
 .section {
