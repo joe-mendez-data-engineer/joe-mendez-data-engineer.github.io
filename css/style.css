@@ -48,22 +48,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 500px) {
-  .slides-container2 {
-     background: url('/img/joe-mendez-mobile.png');
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .navbar-brand {
-        width: 45%;
-        padding-top: 5px; 
-        padding-bottom: 5px;
-        padding-left: 5px;
-    }
-}
-
 .navbar {
     background-color: #161617cc;
     padding: 10px 10px;
@@ -125,13 +109,6 @@ body {
     width: 100px;
     height: auto;
     margin: 10px 0;
-}
-
-.slides-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 #pdf-container {
