@@ -84,6 +84,7 @@ body {
     height: 27%;
     padding-top: 5px; 
     padding-bottom: 5px;
+    padding-left: 5px;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -92,7 +93,7 @@ body {
 
 .navbar-nav .nav-item .nav-link:hover {
     text-decoration: underline solid #7fa4d0 3.5px;
-    padding-top: 2px;
+    margin-top: 2px;
 }
 
 .section {
