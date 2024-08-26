@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saving the World from Datageddon!</title>
 
-    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="css/superslides.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="css/superslides.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/jl-low-resolution-logo-color-on-transparent-background.ico" type="image/x-icon">
-    
-    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="img/jl-low-resolution-logo-color-on-transparent-background.ico" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/c75a0766ea.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,97 +33,120 @@
     <div class="loader">
         <div class="inner"></div>
     </div>
-
     <div id="slides">
-        <div class="slides-container d-flex justify-content-center">
+        <div class="landing-image-container">
             <img src="img/joe-mendez-hughes-data-engineer-high-resolution-logo.png" alt="Joe Mendez-Hughes Logo"
-                class="img-fluid" style="max-width: 100%; height: auto;">
+                class="landing-image desktop-image">
+            <img src="img/joe-mendez-mobile.png" alt="Joe Mendez-Hughes Logo" class="landing-image mobile-image">
         </div>
-
         <div class="titleMessage">
             <div class="heading">
-                <p class="main"></p>
-                <h4 class="text-dark"></h4>
-                <br>
-                <h4 class="text-dark"></h4>
-                <div class="arrow bounce text-warning mt-5">
-                    <a href="#about" class="text-warning"><i class="fa fa-arrow-down fa-3x"></i></a>
+                <div style="color:#FED141;" class="arrow bounce">
+                    <i class="fa fa-arrow-down fa-3x" href="#about"></i>
                 </div>
             </div>
         </div>
     </div>
 
-    <nav id="navigation" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="img/joe-mendez-hughes-data-engineer-high-resolution-logo-navbar.png" alt="Navbar Logo"
-                class="img-fluid" style="max-width: 150px; height: auto;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-link" href="#stats">NUMBERS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#work">RESUME</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 22px;">
+                <img src="img/joe-mendez-hughes-data-engineer-high-resolution-logo-navbar.png" class="img-responsive"
+                    alt="NavBar Logo">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stats">NUMBERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">RESUME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <section id="about" class="section text-center">
-        <div class="container">
-            <h4 class="quote">"Data creation is exploding! With all the selfies and useless files people refuse to delete on the cloud,
-                92% of the world's data was created in the last two years alone. At the current rate, the world's data
-                storage capacity will be taken over by next spring; it will be nothing short of a catastrophe.
-                Data shortages, data rationing, data black markets. Someone will save the world from Datageddon..."<br> - Gavin
-                Belson, Chief Innovation Officer, Hooli</h4>
-            <h4 class="mt-5 mb-5">Joe Mendez-Hughes emerges as the beacon of hope in this pivotal moment.</h4>
+    <section id="about" class="section">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-box"><b>About Joe Mendez-Hughes</b></h2>
-                    <p class="intro mt-4" style="margin-top: 40px;"><p>Welcome to the official website of Joe Mendez-Hughes, the hero on a mission to save the world from
-                        Datageddon! With a wealth of experience as a veteran Data Engineer, Joe is here to shield businesses
+                <h4 class="quote">"Data creation is exploding! With all the selfies and useless files people refuse to
+                    delete on the cloud,
+                    92% of the world's data was created in the last two years alone. At the current rate, the world's
+                    data
+                    storage capacity will be taken over by next spring; it will be nothing short of a catastrophe.
+                    Data shortages, data rationing, data black markets. Someone will save the world from
+                    Datageddon..."<br> - Gavin
+                    Belson, Chief Innovation Officer, Hooli</h4>
+                <h4 class="mt-5 mb-5">Joe Mendez-Hughes emerges as the beacon of hope in this pivotal moment.</h4>
+                <div class="col-12">
+                    <h2 class="text-box"><b>About Joe</br> Mendez-Hughes</b></h2>
+                </div>
+                <div class="col-12" style="margin-top: 40px;">
+                    <p>Welcome to the official website of Joe Mendez-Hughes, the hero on a mission to save the world
+                        from
+                        Datageddon! With a wealth of experience as a veteran Data Engineer, Joe is here to shield
+                        businesses
                         and organizations from the catastrophic consequences of data chaos.</p>
-                    <p>In today's data-driven world, businesses rely on accurate and reliable data to make informed decisions
+                    <p>In today's data-driven world, businesses rely on accurate and reliable data to make informed
+                        decisions
                         and gain a competitive edge. However, the exponential growth of data poses numerous challenges,
-                        including data quality issues, inefficient pipelines, and security vulnerabilities. This is where Joe
+                        including data quality issues, inefficient pipelines, and security vulnerabilities. This is
+                        where Joe
                         steps in, armed with his unrivaled skills and dedication.</p>
-                    <p>Joe is a highly skilled Data Engineer who has honed his craft over the years, specializing in creating
+                    <p>Joe is a highly skilled Data Engineer who has honed his craft over the years, specializing in
+                        creating
                         robust data architectures and designing efficient pipelines. Proficient in a wide range of
-                        technologies such as Python, SQL, Spark, and Snowflake, Joe leverages his extensive toolkit to tame
+                        technologies such as Python, SQL, Spark, and Snowflake, Joe leverages his extensive toolkit to
+                        tame
                         the most complex data landscapes.</p>
-                    <p>But Joe is more than just a technical expert. He is a passionate problem-solver who thrives on taking
-                        on large-scale data projects. His meticulous attention to detail and commitment to excellence ensures
-                        that your data is transformed into a valuable asset, empowering you to make data-driven decisions
+                    <p>But Joe is more than just a technical expert. He is a passionate problem-solver who thrives on
+                        taking
+                        on large-scale data projects. His meticulous attention to detail and commitment to excellence
+                        ensures
+                        that your data is transformed into a valuable asset, empowering you to make data-driven
+                        decisions
                         with confidence.</p>
-                    <p>When Datageddon strikes, you need a hero who can navigate through the chaos and restore order. Joe is
+                    <p>When Datageddon strikes, you need a hero who can navigate through the chaos and restore order.
+                        Joe is
                         that hero, armed with a proven track record of delivering successful data projects and saving
-                        businesses from the brink of disaster. Trust him to safeguard your data, streamline your processes,
+                        businesses from the brink of disaster. Trust him to safeguard your data, streamline your
+                        processes,
                         and propel your business toward unprecedented success.</p>
                     <p>Explore his website to learn more about Joe's expertise, past projects, and how he can help your
-                        business overcome any data challenge. Don't let Datageddon catch you off guard—partner with Joe and
+                        business overcome any data challenge. Don't let Datageddon catch you off guard—partner with Joe
+                        and
                         secure your data's future today!</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="stats" class="section statsSection" style="border-top: solid 5px #f9e8a2">
+    <section id="stats" class="section statsSection" style="border-top: solid 5px #FED141;">
         <div class="container text-center">
             <h2 class="text-box"><b>Joe's Numbers</b></h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="squareItem">
-                        <div class="squareInnerContainer">
+                        <div class="squareInnerContainer" style="height: 300px;">
                             <div class="squareIcon">
-                                <i class="fa fa-calendar" style="color: #7fa4d0;"></i>
+                                <i class="fa fa-calendar" style="color: #1334d6;"></i>
                             </div>
                             <div class="squareContent">
                                 <h4>Joe has a valiant</h4>
-                                <div class="counter" style="font-size: 22px;">7</div>
+                                <div class="counter" style="font-size: 30px; margin: 10px">7</div>
                                 <h4>years of experience!</h4>
                             </div>
                         </div>
@@ -123,13 +154,15 @@
                 </div>
                 <div class="col-md-6">
                     <div class="squareItem">
-                        <div class="squareInnerContainer">
+                        <div class="squareInnerContainer" style="height: 300px;">
                             <div class="squareIcon">
-                                <i class="fa fa-database" style="color:#7fa4d0;"></i>
+                                <i class="fa fa-database" style="color:#1334d6;"></i>
                             </div>
                             <div class="squareContent">
                                 <h4>Joe has rescued over</h4>
-                                <div class="counter" style="font-size: 22px;">5000000000000000</div>
+                                <div class="counter"
+                                    style="font-size: 22px; margin-top: 15px; margin-bottom: 20px; margin-left: auto; margin-right: auto;">
+                                    5000000000000000</div>
                                 <h4>bytes of data!</h4>
                             </div>
                         </div>
@@ -138,191 +171,236 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="skillsSection section">
 
-		<div class="container">
+    <div id="skills" class="skillsSection section">
 
-			<div class="row">
-
-				<div class="col-md-12 text-center" ">
-					<div class="slides-container">
-						<h2 class="text-box2"><b>Joe's Skills</b></h2>
-					</div>
-					<h5 style="margin-top: 45px;">Swipe left or right</h>
-				</div>
-				<div class="owl-carousel owl-theme">
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/snowflake.png" style="width: 90%; padding-left: 10%; padding-top: 10%;"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>Snowflake</h5>
-					</div>
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/database-amazon-redshift.svg" style="width: 100%; padding-bottom: 10%;"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>AWS Redshift</h5>
-					</div>
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/python.svg" style="padding-top: 10px;"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>Python</h5>
-					</div>
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/cloud-sql.svg" style="height: 140%; padding-bottom: 40px;"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>SQL</h5>
-					</div>
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/databricks.png" style="height: 95%; width: 95%"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>Databricks</h5>
-					</div>
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/PngItem_1054687.png" style="padding-top: 10%"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>Spark</h5>
-					</div>
-					
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/airflow.png"  style="width: 90%; padding-left: 10%; padding-top: 10%;"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>Airflow</h5>
-					</div>
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/pngwing.com.png" style="width: 95%; padding-left: 10%; padding-top: 25%;"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>Amazon Web Services</h5>
-					</div>
-					<div class="skill">
-						<span class="chart">
-							<img class="manImg" src="img/gcp-logo-cloud.png" style="width: 90%; padding-left: 10%; padding-top: 15%;"></img>
-							<canvas height="180" width="152"></canvas>
-						</span>
-						<h5>Google Cloud Platform</h5>
-					</div>
-					
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
-
-    <section id="work" class="section text-center">
         <div class="container">
-            <div class="heading">
+
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+                    <div class="slides-container">
+                        <h2 class="text-box2"><b>Joe's Skills</b></h2>
+                    </div>
+                    <h5 style="margin-top: 40px;">Swipe left or right</h>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/snowflake.png"
+                                style="width: 90%; padding-left: 10%; padding-top: 10%;"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>Snowflake</h5>
+                    </div>
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/database-amazon-redshift.svg"
+                                style="width: 100%; padding-bottom: 10%;"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>AWS Redshift</h5>
+                    </div>
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/python.svg" style="padding-top: 10px;"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>Python</h5>
+                    </div>
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/cloud-sql.svg"
+                                style="height: 140%; padding-bottom: 40px;"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>SQL</h5>
+                    </div>
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/databricks.png" style="height: 95%; width: 95%"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>Databricks</h5>
+                    </div>
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/PngItem_1054687.png" style="padding-top: 10%"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>Spark</h5>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/airflow.png"
+                                style="width: 90%; padding-left: 10%; padding-top: 10%;"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>Airflow</h5>
+                    </div>
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/pngwing.com.png"
+                                style="width: 95%; padding-left: 10%; padding-top: 25%;"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>Amazon Web Services</h5>
+                    </div>
+                    <div class="skill">
+                        <span class="chart">
+                            <img class="manImg" src="img/gcp-logo-cloud.png"
+                                style="width: 90%; padding-left: 10%; padding-top: 15%;"></img>
+                            <canvas height="180" width="152"></canvas>
+                        </span>
+                        <h5>Google Cloud Platform</h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <section id="work" class="section">
+        <div class="container">
+            <div class="heading text-center">
                 <h2 class="text-box"><b>Joe's Resume</b></h2>
             </div>
-
-            <div class="resume-section" style="margin-top: 30px; padding-bottom: 20px; border-bottom: solid 5px #7fa4d0">
-                <h5><b>SENIOR DATA ENGINEER</b></h5>
-                <h5><i>Dynamo Technologies, Washington, D.C.</i></h5>
-                <h5>September 2023 - May 2024</h5>
-                <ul style="font-size: 120%;">
+            <div class="resume-section"
+                style="margin-top: 10px; padding-bottom: 10px; border-bottom: solid 5px #1334d6; ">
+                <h5 style="color: #333333 !important"><b>SENIOR DATA ENGINEER</b></h5>
+                <h6><i>Dynamo Technologies, Washington, D.C.</i></h6>
+                <h6>September 2023 - May 2024</h6>
+                <ul>
                     <li>Spearheaded the mission to obliterate data chaos and construct invincible ETL pipelines.</li>
-                    <li>Architected and maintained robust data infrastructure within AWS, utilizing Redshift, Glue, and S3.</li>
-                    <li>Deployed and optimized Snowflake data warehouses, transforming raw data into actionable insights determined to stave off data catastrophe.</li>
-                    <li>Masterminded the implementation of AWS Glue to automate and orchestrate data flows to valiantly deliver near real-time data.</li>
+                    <li>Architected and maintained robust data infrastructure within AWS, utilizing Redshift, Glue, and
+                        S3.</li>
+                    <li>Deployed and optimized Snowflake data warehouses, transforming raw data into actionable insights
+                        determined to stave off data catastrophe.</li>
+                    <li>Masterminded the implementation of AWS Glue to automate and orchestrate data flows to valiantly
+                        deliver near real-time data.</li>
                     <li>Developed scalable data solutions to neutralize future threats posed by Datageddon.</li>
-                    <li>Fine-tuned Redshift clusters to handle vast volumes of data with speed and precision, increasing data valiancy by 30%.</li>
+                    <li>Fine-tuned Redshift clusters to handle vast volumes of data with speed and precision, increasing
+                        data valiancy by 30%.</li>
                 </ul>
+                <p style="margin-top: 10px;">In this momentous role at Dynamo Technologies, Joe stood at the forefront
+                    of the battle against A.I. adversity, relentlessly striving to
+                    safeguard the future and prevent disaster.</p>
             </div>
-            <div class="resume-section" style="margin-top: 20px; padding-bottom: 20px; border-bottom: solid 5px #7fa4d0">
-                <h5><b>DATA ENGINEER</b></h5>
-                <h5><i>Deep Cloud IQ, New York, NY</i></h5>
-                <h5>July 2021 - September 2023</h5>
-                <ul style="font-size: 120%;">
-                	<li>Leveraged the power of Databricks, Spark, Python, and SQL, safeguarding the future of education in the heart of the city that never sleeps.</li>
-                    <li>Developed scalable data pipelines, transforming raw educational data into actionable insights that propelled decision-making, empowering educators to shape the lives of over 1000000 students.</li>
-                    <li>Vanquished the specter of inaccuracy, resurrecting hope with 80% surge in data accuracy, saving us all from the clutches of Datageddon.</li>
-                    <li>Commandeered the helm to spearhead the revolutionary construction and deployment of a data lake, heralding a triumphant era with a resounding 50% surge in data accessibility.</li>
-                    <li>Embraced challenges with unwavering determination, optimizing data processing, storage, and retrieval, thus reducing latency and providing real-time insights for timely decision-making.</li>
+            <div class="resume-section"
+                style="margin-top: 20px; padding-bottom: 10px; border-bottom: solid 5px #1334d6  ;">
+                <h5 style="color: #333333 !important"><b>SENIOR DATA ENGINEER</b></h5>
+                <h6><i>Deep Cloud IQ, New York, NY</i></h6>
+                <h6>September 2023 - May 2024</h6>
+                <ul>
+                    <li>Leveraged the power of Databricks, Spark, Python, and SQL, safeguarding the future of education
+                        in the heart of the city that never sleeps.</li>
+                    <li>Developed scalable data pipelines, transforming raw educational data into actionable insights
+                        that propelled decision-making, empowering educators to shape the lives of over 1000000
+                        students.</li>
+                    <li>Vanquished the specter of inaccuracy, resurrecting hope with 80% surge in data accuracy, saving
+                        us all from the clutches of Datageddon.</li>
+                    <li>Commandeered the helm to spearhead the revolutionary construction and deployment of a data lake,
+                        heralding a triumphant era with a resounding 50% surge in data accessibility.</li>
+                    <li>Embraced challenges with unwavering determination, optimizing data processing, storage, and
+                        retrieval, thus reducing latency and providing real-time insights for timely decision-making.
+                    </li>
                 </ul>
+                <p style="margin-top: 10px;">In the relentless war to prevent A.I. calamity, Joe's role at Deep Cloud
+                    IQ was pivotal. As a Machine Learning Engineer,
+                    he fortified the defenses of education, ensuring every student could thrive in a world where A.I.
+                    was harnessed for good, not destruction.</p>
             </div>
-            <div class="resume-section" style="margin-top: 20px; padding-bottom: 20px; border-bottom: solid 5px #7fa4d0">
-                <h5><b>SOFTWARE ENGINEER</b></h5>
-                <h5><i>Millennial Shift Technologies, Phoenix, AZ</i></h5>
-                <h5>October 2020 - June 2021</h5>
-                <ul style="font-size: 120%;">
-                	<li>As the master architect of APIs and middle-tier code, Joe forged the very foundation upon which organizations stood resilient against the onslaught of data chaos.</li>
+            <div class="resume-section"
+                style="margin-top: 20px; padding-bottom: 10px; border-bottom: solid 5px #1334d6 ;">
+                <h5 style="color: #333333 !important"><b>SOFTWARE ENGINEER</b></h5>
+                <h6><i>Millennial Shift Technologies, Phoenix, AZ</i></h6>
+                <h6>September 2023 - May 2024</h6>
+                <ul>
+                    <li>As the master architect of APIs and middle-tier code, Joe forged the very foundation upon which
+                        organizations stood resilient against the onslaught of data chaos.</li>
                     <li>Fearlessly embraced the challenge of creating powerful and efficient SOAP and RESTful APIs.</li>
-                    <li>Fueled by a relentless pursuit of excellence, Joe tirelessly engineered elegant and scalable solutions, securing the data of the first, third, and fifth largest wholesale insurance companies in America.</li>
-                    <li>Fearlessly delved into the depths of software systems, debugging and optimizing with unwavering determination.</li>
-                    <li>Championed data integrity and quality, crafting robust error-handling mechanisms and validation routines that guarded against the insidious influence of corrupt and inaccurate information.</li>
+                    <li>Fueled by a relentless pursuit of excellence, Joe tirelessly engineered elegant and scalable
+                        solutions, securing the data of the first, third, and fifth largest wholesale insurance
+                        companies in America.</li>
+                    <li>Fearlessly delved into the depths of software systems, debugging and optimizing with unwavering
+                        determination.</li>
+                    <li>Championed data integrity and quality, crafting robust error-handling mechanisms and validation
+                        routines that guarded against the insidious influence of corrupt and inaccurate information.
+                    </li>
                 </ul>
+                <p>In the hallowed halls of Millennial Shift Technologies, where noble engineers banded together to save
+                    the world from the impending A.I. catastrophe, Joe's contributions
+                    as a Software Engineer played an integral role in fortifying organizations against chaos.</p>
             </div>
-            <div class="resume-section" style="margin-top: 20px; padding-bottom: 20px; border-bottom: solid 5px #7fa4d0">
-                <h5><b>JR SOFTWARE ENGINEER</b></h5>
-                <h5><i>Aristocrat - Independent Contractor, Las Vegas, NV</i></h5>
-                <h5>February 2018 - May 2020</h5>
-                <ul style="font-size: 120%;">
-                	<li>Joined the ranks of coding defenders, contributing to the development of innovative solutions that kept Datageddon at bay.</li>
-                    <li>Collaborated closely with cross-functional teams, fusing their collective expertise to design against the onslaught of information disorder.</li>
-                    <li>Through relentless debugging and optimization, Joe transformed potential bugs into mere whispers in the wind.</li>
-                    <li>Developed solutions alongside seasoned engineers, soaking in their wisdom and sharpening his skills to become the preeminent defender of the digital realm.</li> 
-                    <li>Crafted experiences that stood as shining beacons of hope in the ever-present battle against data-driven chaos.</li>
+            <div class="resume-section"
+                style="margin-top: 20px; padding-bottom: 10px; border-bottom: solid 5px #1334d6 ; ">
+                <h5 style="color: #333333 !important"><b>JR SOFTWARE ENGINEER</b></h5>
+                <h6><i>Aristocrat - Independent Contractor, Las Vegas, NV</i></h6>
+                <h6>September 2023 - May 2024</h6>
+                <ul>
+                    <li>Joined the ranks of coding defenders, contributing to the development of innovative solutions
+                        that kept Datageddon at bay.</li>
+                    <li>Collaborated closely with cross-functional teams, fusing their collective expertise to design
+                        against the onslaught of information disorder.</li>
+                    <li>Through relentless debugging and optimization, Joe transformed potential bugs into mere whispers
+                        in the wind.</li>
+                    <li>Developed solutions alongside seasoned engineers, soaking in their wisdom and sharpening his
+                        skills to become the preeminent defender of the digital realm.</li>
+                    <li>Crafted experiences that stood as shining beacons of hope in the ever-present battle against
+                        data-driven chaos.</li>
                 </ul>
-            </div>
-
-            <div class="pdf-container mx-auto" id="pdf-container" style="margin-top: 25px">
-                <iframe src="img/Joe Mendez-Hughes Resume.pdf" type="application/pdf" class="pdf-viewer"></iframe>
-                <br />
-                <a href="img/Joe Mendez-Hughes Resume.docx" download class="contactButton">Download</a>
+                <p style="margin-top: 10px;">During Joe's tenure at Aristocrat as a fervent Junior Software Engineer,
+                    his indomitable spirit and unwavering dedication
+                    played an integral role in saving the world from the clutches of A.I. cataclysm.</p>
             </div>
         </div>
     </section>
-
-    <section id="contact" class="contactSection section" style="margin-top: 40px; border-top: solid 5px #f9e8a2;">
-        <div class="container text-center">
+    <section class="pdf-viewer-container" style="margin-bottom: 40px; margin-top: -40px;">
+        <div class="pdf-viewer">
+            <iframe src="img/Joe Mendez-Hughes Resume.pdf" type="application/pdf" alt="Joe Mendez-Hughes Resume.pdf"
+                style="margin: 0 auto;"></iframe>
+        </div>
+        <a href="img/Joe Mendez-Hughes Resume.docx" download class="contactButton">Download</a>
+    </section>
+    <section id="contact" class="contactSection section" style="border-top: solid 5px #FED141;">
+        <div class="container text-center" style="padding-top: 30px;">
             <div class="heading">
                 <h2 class="text-box"><b>Get in Touch with Joe!</b></h2>
-                <a href="mailto:data.engineer.joe@gmail.com" class="contactButton" style="margin-top: 50px;">Email</a>
-                <h5 style="margin-top: 40px;">Join me in the fight to save the world from Datageddon!</h5>
+                <a href="mailto:joemendez.ai@gmail.com" class="contactButton" style="margin-top: 50px;">Email</a>
+                <h6 style="margin-top: 30px;">Join Joe in the fight to save the world from Datageddon!</h6>
             </div>
         </div>
     </section>
-
     <section id="thanks" class="thanksSection section">
-        <div class="slides-container">
-            <img src="img/thanks.jpg" alt="Thank you image" style="display: block; padding-top: 20px; margin: 0 auto;">
+        <div class="thanks-container">
+            <img src="img/vaultBoy.webp" alt="Thumbs Up image">
         </div>
         <div class="container text-center" style="padding-top: 20px;">
             <h5>Dear Esteemed Visitor,<br>
-                On behalf of Joe Mendez-Hughes, we extend our heartfelt gratitude for gracing us with your presence. Your visit honors Joe's dedication to saving the world from data chaos.</h5>
-            <h5>&copy; 2024 Joe Mendez-Hughes</h5>
+                On behalf of Joe Mendez-Hughes, we extend our heartfelt gratitude for gracing us with your presence.
+                Your visit honors Joe's tireless dedication to Saving the World from Datageddon!</h5>
+            <h5>&copy;2024 Joe Mendez-Hughes</h5>
         </div>
     </section>
 
-    <!-- JavaScript -->
-    <script src="js/jquery.superslides.min.js"></script>
     <script src="js/countUp.js"></script>
     <script src="js/countUp-jquery.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
     <script src="js/script.js"></script>
 
 </body>
