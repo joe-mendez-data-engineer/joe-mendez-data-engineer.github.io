@@ -1,6 +1,6 @@
 body {
-  color: #333333;
-  background-color: #f2f3f4 !important;
+  color: #ffffff;
+  background-color: #181818 !important;
   letter-spacing: 1px;
   font-family: "Exo", sans-serif !important;
 }
@@ -71,7 +71,7 @@ li {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #f2f3f4; /* Adjust background color as needed */
+    background-color: #181818; /* Adjust background color as needed */
 }
 
 .pdf-viewer {
@@ -161,7 +161,7 @@ li {
   z-index: 3;
 }
 
-.text-box {
+.text-box2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +173,7 @@ li {
   box-shadow: 12px 12px 2px 1px #1334d6;
 }
 
-.text-box2 {
+.text-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,19 +201,19 @@ li {
 }
 
 .skillsSection.section {
-  background-color: #000;
-  color: #fff;
+  background-color: #f2f3f4;
+  color: #333333;
 }
 
 .contactSection {
-  background-color: #f2f3f4;
-  color: #333333;
+  background-color: #181818;
+  color: #ffffff;
   border: 1px solid #d5d5d5 20%;
 }
 
 .thanksSection.section {
-  background-color: #000;
-  color: #fff;
+  background-color: #F2F3F4;
+  color: #333333;
   margin-bottom: -180px;
 }
 
@@ -287,11 +287,11 @@ li {
 }
 
 .contactButton {
-  color: #1334d6;
+  color: #ffffff;
   border: solid 3px #1334d6;
   font-size: 22px;
   font-weight: 500;
-  background-color: #fff;
+  background-color: #181818;
   padding: .475rem 1.675rem;
   display: inline-block;
   margin-top: 20px;
@@ -364,14 +364,14 @@ div.skill {
 }
 
 h5 {
-  color: #fff;
+  color: #333333;
 }
 h1,
 h2,
 h3,
 h4,
 h6 {
-  color: #333333;
+  color: #ffffff;
 }
 
 a {
