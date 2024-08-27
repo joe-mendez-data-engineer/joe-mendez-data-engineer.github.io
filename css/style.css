@@ -2,7 +2,14 @@ body {
   color: #ffffff;
   background-color: #121212 !important;
   letter-spacing: 1px;
-  font-family: "Actor", sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
+}
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .landing-image-container {
