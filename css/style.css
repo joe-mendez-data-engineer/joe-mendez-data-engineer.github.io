@@ -323,7 +323,7 @@ li {
 }
 
 #navigation {
-  background-color: #161617cc;
+  background-color: transparent;
   padding: 10px 10px;
   z-index: 100;
   width: 100%;
