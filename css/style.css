@@ -77,7 +77,7 @@ li {
 
 .pdf-viewer {
     width: 100%;
-    max-width: 1000px; /* Max width to prevent it from being too wide */
+    min-height:100vh /* Max width to prevent it from being too wide */
     height: 100%; /* Set a height for the iframe to occupy most of the viewport */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for a nice effect */
     margin:0;
