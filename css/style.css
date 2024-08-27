@@ -285,6 +285,13 @@ li {
   margin: 0;
 }
 
+.squareContent h4 {
+  color: #333333;
+}
+
+.counter {
+  color: #333333;
+}
 .squareIcon {
   font-size: 40px;
   margin-bottom: 20px;
