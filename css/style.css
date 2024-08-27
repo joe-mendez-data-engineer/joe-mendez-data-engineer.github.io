@@ -1,6 +1,6 @@
 body {
   color: #ffffff;
-  background-color: #181818 !important;
+  background-color: #121212 !important;
   letter-spacing: 1px;
   font-family: "Exo", sans-serif !important;
 }
@@ -71,7 +71,7 @@ li {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #181818; /* Adjust background color as needed */
+    background-color: #121212; /* Adjust background color as needed */
 }
 
 .pdf-viewer {
@@ -171,7 +171,7 @@ li {
   padding: 11px 70px;
   border: solid 1px black;
   box-shadow: 12px 12px 2px 1px #1334d6;
-  color: #181818
+  color: #121212
 }
 
 .text-box {
@@ -184,7 +184,7 @@ li {
   padding: 11px 70px;
   border: solid 1px white;
   box-shadow: 12px 12px 2px 1px #1334d6;
-  background-color: #181818;
+  background-color: #121212;
   color: #ffffff;
 }
 
@@ -202,7 +202,7 @@ li {
 }
 
 .skillsSection.section {
-  background-color: #181818;
+  background-color: #121212;
   color: #ffffff;
 }
 
@@ -210,13 +210,13 @@ li {
   color: #333333
 }
 .contactSection {
-  background-color: #181818;
+  background-color: #121212;
   color: #ffffff;
   border: 1px solid #d5d5d5 20%;
 }
 
 .thanksSection.section {
-  background-color: #181818;
+  background-color: #121212;
   color: #ffffff !important;
   margin-bottom: -180px;
 }
@@ -302,7 +302,7 @@ li {
   border: solid 3px #1334d6;
   font-size: 22px;
   font-weight: 500;
-  background-color: #181818;
+  background-color: #121212;
   padding: .475rem 1.675rem;
   display: inline-block;
   margin-top: 20px;
