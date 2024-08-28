@@ -185,6 +185,7 @@ li {
   border: solid 1px black;
   box-shadow: 12px 12px 2px 1px #1334D6;
   color: #121212
+  font-weight: bold;
 }
 
 .text-box {
@@ -199,6 +200,7 @@ li {
   box-shadow: 12px 12px 2px 1px #1334D6;
   background-color: #121212;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .section {
