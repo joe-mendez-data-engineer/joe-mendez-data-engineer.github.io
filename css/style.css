@@ -316,7 +316,7 @@ li {
   font-size: 22px;
   font-weight: 500;
   background-color: #121212;
-  padding: .475rem 1.675rem;
+  padding: .55rem 1.8rem;
   display: inline-block;
   margin-top: 20px;
   border-radius: 35px;
@@ -326,7 +326,7 @@ li {
   text-decoration: none;
   color: #fff;
   background-color: #1334D6;
-  box-shadow: 12px 12px 2px 1px #FAE7A7 !important;
+  box-shadow: 12px 12px 2px 1px #FDF070 !important;
 }
 
 .section .heading {
