@@ -157,6 +157,9 @@ li {
     padding-left: 15px;
     padding-right: 15px;
   }
+  navbar-toggler-icon {
+     border-color: #f2f3f4;
+  }
 }
 
 .thanks-container {
