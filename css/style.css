@@ -334,12 +334,29 @@ li {
   margin-bottom: 20px;
 }
 
-.contactButton {
+.downloadButton {
   color: #ffffff;
   border: solid 3px #1334d6;
   font-size: 1.375rem;
   font-weight: 500;
   background-color: #121212;
+  padding: 0.55rem 1.8rem;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 35px;
+}
+.downloadButton:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1334d6;
+  box-shadow: 12px 12px 2px 1px #fdf070 !important;
+}
+.contactButton {
+  color: #1334d6;
+  border: solid 3px #1334d6;
+  font-size: 1.375rem;
+  font-weight: 500;
+  background-color: transparent;
   padding: 0.55rem 1.8rem;
   display: inline-block;
   margin-top: 20px;
