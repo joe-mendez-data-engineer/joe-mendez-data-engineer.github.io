@@ -1,7 +1,7 @@
 body {
   color: #ffffff;
   background-color: #121212 !important;
-  letter-spacing: 1px;
+  letter-spacing: 0.063rem;
   font-family: "Roboto Flex", sans-serif !important;
 }
 
@@ -59,18 +59,18 @@ body {
     }
 }
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 li {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 0.625rem;
 }
 
 .img-responsive {
-  padding: 3px 0px 3px 5px;
+  padding: 0.188rem 0rem 0.188rem 0.313rem;
   width: 35%;
   height: 35%;
 }
@@ -81,7 +81,7 @@ li {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
     box-sizing: border-box;
     background-color: #121212; /* Adjust background color as needed */
 }
@@ -91,7 +91,7 @@ li {
     max-width: 1000px; /* Max width to prevent it from being too wide */
     height: 80vh; /* Set a height for the iframe to occupy most of the viewport */
     margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for a nice effect */
+    box-shadow: 0 0.25rem 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for a nice effect */
 }
 
 .pdf-viewer iframe {
@@ -140,16 +140,16 @@ li {
     margin: 0 auto;
   }
   p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.4;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
   .section {
-    padding: 40px 5px;
+    padding: 2.5rem 0.313rem;
   }
   li {
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
   }
   .thanks-container {
      max-width: 200px; /* Maximum width of the image container */
@@ -160,12 +160,12 @@ li {
     height: auto;
   }
   container.text-center.quote {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
   h5.quote {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10.313rem;
+    padding-right: 10.313rem;
   }
 }
 
@@ -198,9 +198,9 @@ li {
   text-align: center;
   margin: 0 auto;
   width: 50%;
-  padding: 11px 70px;
-  border: solid 1px black;
-  box-shadow: 12px 12px 2px 1px #1334D6;
+  padding: 0.75rem 4.375rem;
+  border: solid 0.063rem black;
+  box-shadow: 0.75rem 0.75rem 0.125rem 0.063rem #1334D6;
   color: #121212;
   font-weight: bold;
 }
@@ -212,16 +212,16 @@ li {
   text-align: center;
   margin: 0 auto;
   width: 50%;
-  padding: 11px 70px;
-  border: solid 1px white;
-  box-shadow: 12px 12px 2px 1px #1334D6;
+  padding: 0.75rem 4.375rem;
+  border: solid 0.063rem white;
+  box-shadow: 0.75rem 0.75rem 0.125rem 0.063rem #1334D6;
   background-color: #121212;
   color: #ffffff;
   font-weight: bold;
 }
 
 .section {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 .aboutImage {
@@ -229,7 +229,7 @@ li {
 }
 
 .intro {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   font-size: large;
 }
 
@@ -244,13 +244,13 @@ li {
 .contactSection {
   background-color: #121212;
   color: #ffffff;
-  border: 1px solid #d5d5d5 20%;
+  border: 0.063rem solid #d5d5d5 20%;
 }
 
 .thanksSection.section {
   background-color: #121212;
   color: #ffffff !important;
-  margin-bottom: -180px;
+  margin-bottom: -12.5rem;
 }
 
 .thanksSection.section.slides-container.img {
@@ -262,13 +262,13 @@ li {
 
 .skill {
   text-align: center;
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .chart {
   position: relative;
-  width: 152px;
-  height: 152px;
+  width: 150.125rem;
+  height: 150.125rem;
   display: inline-block;
   text-align: center;
 }
@@ -281,9 +281,9 @@ li {
 
 .chart .percent {
   color: #fff;
-  line-height: 152px;
+  line-height: 150.125rem;
   display: inline-block;
-  font-size: 35px;
+  font-size: 30.313rem;
 }
 
 .chart .percent:after {
@@ -291,28 +291,28 @@ li {
 }
 
 .squareItem {
-  margin-top: 28px;
+  margin-top: 1.75rem;
   position: relative;
 }
 
 .squareInnerContainer {
   align-items: center;
-  padding: 25px 35px;
+  padding: 20.313rem 30.313rem;
   text-align: center;
-  border-radius: 9px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 0.563rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0.125rem 0.25rem,
+  rgba(0, 0, 0, 0.3) 0px 0.438rem 10.188rem -0.188rem, rgba(0, 0, 0, 0.2) 0px -0.188rem 0px inset;
 }
 
 .squareContent h2 {
-  font-size: 56px;
-  margin-bottom: 10px;
+  font-size: 3.5rem;
+  margin-bottom: 0.625rem;
   font-weight: 400;
   color: #333333;
 }
 
 .squareContent h3 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0;
 }
@@ -325,45 +325,45 @@ li {
   color: #333333;
 }
 .squareIcon {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .contactButton {
   color: #ffffff;
-  border: solid 3px #1334D6;
-  font-size: 22px;
+  border: solid 0.188rem #1334D6;
+  font-size: 20.125rem;
   font-weight: 500;
   background-color: #121212;
   padding: .55rem 1.8rem;
   display: inline-block;
-  margin-top: 20px;
-  border-radius: 35px;
+  margin-top: 1.25rem;
+  border-radius: 30.313rem;
 }
 
 .contactButton:hover {
   text-decoration: none;
   color: #fff;
   background-color: #1334D6;
-  box-shadow: 12px 12px 2px 1px #FDF070 !important;
+  box-shadow: 0.75rem 0.75rem 0.125rem 0.063rem #FDF070 !important;
 }
 
 .section .heading {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
   width: 100%;
 }
 
 #navigation {
   background-color: #161617cc;
-  padding: 10px 10px;
+  padding: 0.625rem 0.625rem;
   z-index: 100;
   width: 100%;
-  box-shadow: 0 2px 5px black;
+  box-shadow: 0 0.125rem 0.313rem black;
 }
 
 #navigation li {
-  padding: 0 10px;
+  padding: 0 0.625rem;
   margin: 0 auto;
   color: #ffffff;
 }
@@ -373,7 +373,7 @@ li {
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #1334D6 2.5px;
+  text-decoration: underline solid #1334D6 2.0.313rem;
 }
 
 div#navbarNav.collapse.navbar-collapse {
@@ -405,7 +405,7 @@ div#navbarNav.collapse.navbar-collapse {
 }
 
 div.skill {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 h1,
@@ -456,6 +456,6 @@ a {
   }
 
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-10.313rem);
   }
 }
