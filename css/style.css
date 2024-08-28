@@ -183,7 +183,7 @@ li {
   width: 50%;
   padding: 11px 70px;
   border: solid 1px black;
-  box-shadow: 12px 12px 2px 1px #1334d6;
+  box-shadow: 12px 12px 2px 1px #325886;
   color: #121212
 }
 
@@ -196,7 +196,7 @@ li {
   width: 50%;
   padding: 11px 70px;
   border: solid 1px white;
-  box-shadow: 12px 12px 2px 1px #1334d6;
+  box-shadow: 12px 12px 2px 1px #325886;
   background-color: #121212;
   color: #ffffff;
 }
@@ -312,7 +312,7 @@ li {
 
 .contactButton {
   color: #ffffff;
-  border: solid 3px #1334d6;
+  border: solid 3px #325886;
   font-size: 22px;
   font-weight: 500;
   background-color: #121212;
@@ -325,7 +325,7 @@ li {
 .contactButton:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #1334d6;
+  background-color: #325886;
   box-shadow: 12px 12px 2px 1px #FAE7A7 !important;
 }
 
@@ -354,7 +354,7 @@ li {
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #1334D6 2.5px;
+  text-decoration: underline solid #325886 2.5px;
   text-shadow: rgba(255,255,255,0.9) 0px 0px 5px;
 }
 
