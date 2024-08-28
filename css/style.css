@@ -120,9 +120,18 @@ li {
 }
 
 @media only screen and (max-width: 576px) {
+  .resume-section {
+      text-align: center;
+  }
   .pdf-viewer {
         height: 60vh; /* Reduce the height on smaller screens */
     }
+  .pdf-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0 auto;
+  }
   .navbar-brand {
     max-width: 75vw;
   }
