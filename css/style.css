@@ -113,22 +113,9 @@ li {
   .heading-section {
     text-align: center;
   }
-  .pdf-viewer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: #121212; /* Adjust background color as needed */
-}
 .pdf-viewer {
-  width: 100%;
-  max-width: 550px; /* Max width to prevent it from being too wide */
   height: 80vh; /* Set a height for the iframe to occupy most of the viewport */
   margin: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for a nice effect */
 }
 
 .pdf-viewer iframe {
