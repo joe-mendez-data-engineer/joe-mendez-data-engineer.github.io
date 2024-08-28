@@ -245,12 +245,12 @@ li {
 .statsSection h4 {
   color: #333333;
 }
-.contactSection {
+.contactSection section {
   background-color: #F5F5F5;
   color: #333333;
 }
-.section.statsSection {
-  background-color: ##F5F5F5;
+.section statsSection {
+  background-color: #F5F5F5;
   color: #333333;
 }
 
