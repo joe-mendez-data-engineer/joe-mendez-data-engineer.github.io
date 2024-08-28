@@ -110,7 +110,7 @@ li {
 }
 
 @media only screen and (max-width: 576px) {
-  .resume-section {
+  .heading-section {
     text-align: center;
   }
   .pdf-viewer {
