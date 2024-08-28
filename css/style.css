@@ -150,6 +150,14 @@ li {
     width: 100%; /* Make the image responsive */
     height: auto;
   }
+  container.text-center.quote {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  container.text-center.row.quote {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .thanks-container {
@@ -233,7 +241,7 @@ li {
 .thanksSection.section {
   background-color: #121212;
   color: #ffffff !important;
-  margin-bottom: -150px;
+  margin-bottom: -180px;
 }
 
 .thanksSection.section.slides-container.img {
