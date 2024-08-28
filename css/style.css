@@ -355,7 +355,6 @@ li {
 
 #navigation li a:hover {
   text-decoration: underline solid #1334D6 2.5px;
-  text-shadow: rgba(255,255,255,0.9) 0px 0px 5px;
 }
 
 div#navbarNav.collapse.navbar-collapse {
