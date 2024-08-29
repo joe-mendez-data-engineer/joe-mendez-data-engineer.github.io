@@ -48,6 +48,9 @@ body {
     display: block;
     max-width: 95vw;
     height: auto;
+    padding: 0 10px;
+    margin: 0 auto;
+    
   }
 }
 p {
