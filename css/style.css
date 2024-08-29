@@ -46,6 +46,8 @@ body {
   }
   .mobile-image {
     display: block;
+    max-width: 95vw;
+    height: auto;
   }
 }
 p {
