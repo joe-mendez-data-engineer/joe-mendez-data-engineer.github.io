@@ -188,7 +188,7 @@ li {
   width: 50%;
   padding: 11px 70px;
   border: solid 1px black;
-  box-shadow: 12px -12px 2px 1px grey;
+  box-shadow: 12px -12px 2px 1px #B3B3B3;;
   color: #333333;
   font-weight: bold;
 }
@@ -331,10 +331,10 @@ li {
   border-radius: 35px;
 }
 .downloadButton:hover {
+  border: solid 3px #fdf070;
   text-decoration: none;
   color: #fff;
   background-color: #1334d6;
-  box-shadow: 12px -12px 2px 1px #fdf070 !important;
 }
 .contactButton {
   color: #ffffff;
@@ -348,10 +348,10 @@ li {
   border-radius: 35px;
 }
 .contactButton:hover {
+  border: solid 3px #fdf070;
   text-decoration: none;
   color: #fff;
   background-color: #1334d6;
-  box-shadow: 12px -12px 2px 1px #fdf070 !important;
 }
 
 .section .heading {
