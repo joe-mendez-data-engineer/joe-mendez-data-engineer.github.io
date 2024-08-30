@@ -13,11 +13,6 @@ body {
   font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468,
     "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
 }
-.parisienne-regular {
-  font-family: "Parisienne", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 h5.script {
   font-family: "Parisienne", cursive;
   font-size: 6rem;
@@ -116,6 +111,14 @@ li {
   .mobile-image {
     max-width: 95vw;
     margin: 0auto;
+  }
+  .thanks-container {
+    max-width: 95vw; /* Maximum width of the image container */
+    margin: 0 auto;
+  }
+  .thanks-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
   }
   .heading-section {
     text-align: center;
