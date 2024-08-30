@@ -169,6 +169,11 @@ li {
   }
   .thanks-container {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
   }
   
   container.text-center.quote {
@@ -256,6 +261,7 @@ li {
   background-color: #121212;
   color: #ffffff !important;
   margin-bottom: -200px;
+  text-align: center;
 }
 
 .skill {
