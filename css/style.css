@@ -51,34 +51,6 @@ body {
   display: none;
 }
 
-/* Media query for mobile devices */
-@media screen and (max-width: 500px) {
-  .landing-image-container {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
-}
-
-/* Common styles for all landing images */
-.landing-image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-  
-  .desktop-image {
-    display: none;
-  }
-  .mobile-image {
-    display: block;
-    max-width: 95vw;
-    padding-left: 10px;
-    padding-right: 10px; 
-  }
-}
 p {
   font-size: 1rem;
   line-height: 1.6;
@@ -141,6 +113,15 @@ li {
 }
 
 @media only screen and (max-width: 576px) {
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    max-width: 95vw;
+    padding-left: 10px;
+    padding-right: 10px; 
+  }
   .heading-section {
     text-align: center;
   }
