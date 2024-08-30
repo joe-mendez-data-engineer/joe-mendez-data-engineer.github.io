@@ -109,6 +109,7 @@ li {
     display: none;
   }
   .mobile-image {
+    display: block;
     max-width: 95vw;
     margin: 0auto;
   }
