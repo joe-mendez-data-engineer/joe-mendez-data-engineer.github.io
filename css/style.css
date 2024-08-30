@@ -114,10 +114,8 @@ li {
     display: none;
   }
   .mobile-image {
-    display: block;
     max-width: 95vw;
-    padding-left: 10px;
-    padding-right: 10px; 
+    margin: 0auto;
   }
   .heading-section {
     text-align: center;
@@ -145,15 +143,6 @@ li {
     margin-bottom: 10px;
     font-size: 1rem;
   }
-  .thanks-container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
   container.text-center.quote {
     padding-left: 10px;
     padding-right: 10px;
@@ -163,7 +152,8 @@ li {
     padding-right: 15px;
   }
   .navbar-toggler-icon {
-     border-color: #f2f3f4;
+     border-color: #ffffff;
+    color:#ffffff;
   }
   .text-box {
     max-width: 90vw;
@@ -241,6 +231,15 @@ li {
   margin-bottom: -200px;
   text-align: center;
 }
+
+.thanks-container {
+    max-width: 35vw; /* Maximum width of the image container */
+    margin: 0 auto;
+  }
+  .thanks-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
 
 .skill {
   text-align: center;
