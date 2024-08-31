@@ -222,8 +222,8 @@ body {
     border: solid 1px black;
     box-shadow: 12px 12px 2px 1px #B3B3B3;
     color: #333333;
-    font-weight: bold;
   }
+
   .text-box {
     display: flex;
     justify-content: center;
@@ -236,9 +236,9 @@ body {
     box-shadow: 12px 12px 2px 1px #1334D6;
     background-color: #121212;
     color: #ffffff;
-    font-weight: bold;
   }
-  
+
+
   .section {
     padding: 50px 0;
   }
