@@ -112,14 +112,7 @@ li {
     width: 100%; /* Make the image responsive */
     height: auto;
   }
-  .box {
-    margin-left: 25vw;
-    margin-top: -3vh;
-  }
-    .box2 {
-    margin-left: 25vw;
-    margin-top: -3vh;
-  }
+  
 }
 
 @media only screen and (max-width: 750px) {
@@ -147,18 +140,6 @@ li {
   .thanks-container img {
     width: 100%; /* Make the image responsive */
     height: auto;
-  }
-  .box {
-    max-width: 95vw;
-    width: 100%;
-    margin-left: 12vw;
-    margin-top: -4.5vh;
-  }
-  .box2 {
-    margin-left: 12vw;
-    margin-top: -4.5vh;
-    max-width: 95vw;
-    width: 100%;
   }
 
 }
@@ -224,18 +205,6 @@ li {
     max-width: 95vw;
     width: 100%;
   }
-  .box {
-    max-width: 95vw;
-    width: 100%;
-    margin-left: 13vw;
-    margin-top: -5.3vh;
-  }
-  .box2 {
-    max-width: 95vw;
-    width: 100%;
-    margin-left: 13vw;
-    margin-top: -5.3vh;
-  }
 
   div.thanks-container {
     max-width: 90vw; /* Maximum width of the image container */
@@ -291,42 +260,6 @@ li {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: #f1f1f1;
   z-index: 1;
-  white-space: nowrap
-  }
-
-.box {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 15.4vw;
-  margin-top: -5.5vh;
-  max-width: 540px;
-  width: 100%;
-  padding: 14px 70px;
-  background: #1334D6;
-  color: transparent;
-  z-index: 0;
-  border-radius: 0px;
-  white-space: nowrap
-  }
-
-.box2 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 14.4vw;
-  margin-top: -5.0vh;
-  max-width: 540px;
-  width: 100%;
-  padding: 14px 70px;
-  background: #1334D6;
-  color: transparent;
-  z-index: 0;
-  border-radius: 0px;
   white-space: nowrap
   }
 
