@@ -295,7 +295,7 @@ li {
   }
 
 .box {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +313,7 @@ li {
   }
 
 .box2 {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
