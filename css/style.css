@@ -263,9 +263,16 @@ li {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .heading-section {
+  h5.heading-section {
+    text-align: center;
+    font-weight: 300 !important;
+    font-style: normal;
+  }
+
+   .heading-section {
     text-align: center;
   }
+  
   .pdf-viewer {
     height: 60vh; /* Set a height for the iframe to occupy most of the viewport */
     margin: 0;
