@@ -2,7 +2,14 @@ body {
   color: #ffffff;
   background-color: #121212 !important;
   letter-spacing: 1px;
-  font-family: "Roboto Flex", sans-serif !important;
+  font-family: "Playfair Display", serif !important;
+}
+
+.playfair-display-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .roboto-flex-font {
