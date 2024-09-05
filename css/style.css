@@ -329,9 +329,7 @@ li {
     line-height: 1.4;
     margin-bottom: 10px;
   }
-  .section {
-    padding: 40px 5px;
-  }
+
   li {
     margin-bottom: 10px;
     font-size: 1rem;
@@ -418,13 +416,12 @@ li {
   font-weight: 400;
   font-style: normal;
   }
-
-.section {
-  padding: 50px 10px;
+#about, #stats, #work, #contact, #thanks {
+  padding: 0px 10px;
 }
 
-# resume {
-  
+.section {
+  padding: 50px 0px;
 }
 .aboutImage {
   max-width: 100%;
