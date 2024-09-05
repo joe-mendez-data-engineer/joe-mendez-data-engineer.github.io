@@ -667,20 +667,17 @@ a {
 }
 
 .pdf-container {
+    width: 80%;
+    height: 80vh; /* Make it responsive but not take full height on desktop */
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
-    padding: 0;
-    margin: 0;
-    overflow: hidden; /* Hide any overflow */
-    box-sizing: border-box;
+    border: 1px solid #ccc; /* Optional: To show boundaries */
 }
 
 .pdf-viewer {
     width: 100%;
     height: 100%;
     border: none;
-    object-fit: cover; /* Ensure it scales properly */
 }
