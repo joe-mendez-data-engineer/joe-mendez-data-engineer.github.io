@@ -242,6 +242,29 @@ li {
   #about {
     padding: 10 0;
   }
+  #resume {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Hide any overflow */
+    box-sizing: border-box;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover; /* Ensure it scales properly */
+}
 
 }
 
@@ -270,10 +293,30 @@ li {
     text-align: center;
   }
   
-  .pdf-viewer {
-    height: 60vh; /* Set a height for the iframe to occupy most of the viewport */
+#resume {
     margin: 0;
-  }
+    padding: 0;
+    height: 100%;
+}
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Hide any overflow */
+    box-sizing: border-box;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover; /* Ensure it scales properly */
+}
+
   .navbar-brand {
     max-width: 73vw;
   }
@@ -380,6 +423,9 @@ li {
   padding: 50px 10px;
 }
 
+# resume {
+  
+}
 .aboutImage {
   max-width: 100%;
 }
