@@ -239,6 +239,9 @@ li {
     width: 100%; /* Make the image responsive */
     height: auto;
   }
+  #about {
+    padding: 10 0;
+  }
 
 }
 
@@ -253,6 +256,9 @@ li {
     height: auto;
     padding-left: 10px;
     padding-right: 10px;
+  }
+   #about {
+    padding: 10 0;
   }
   h5.heading-section {
     text-align: center;
