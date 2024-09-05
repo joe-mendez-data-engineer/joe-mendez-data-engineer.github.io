@@ -216,6 +216,17 @@ li {
   #about {
     padding: 10 0;
   }
+      .pdf-container {
+        width: 100%;
+        height: 70vh; /* Adjust the height for mobile */
+        padding: 0;
+    }
+
+    .pdf-viewer {
+        height: 100%;
+        width: 100%;
+        object-fit: contain; /* Ensure the PDF fits inside the view properly */
+    }
 
 }
 
@@ -243,12 +254,6 @@ li {
    .heading-section {
     text-align: center;
   }
-  
-#resume {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 
   .navbar-brand {
     max-width: 73vw;
@@ -321,6 +326,17 @@ li {
     position: fixed;
     top: 0;
   }
+      .pdf-container {
+        width: 100%;
+        height: 70vh; /* Adjust the height for mobile */
+        padding: 0;
+    }
+
+    .pdf-viewer {
+        height: 100%;
+        width: 100%;
+        object-fit: contain; /* Ensure the PDF fits inside the view properly */
+    }
 }
 
 .flex-container {
@@ -353,9 +369,6 @@ li {
   padding: 50px 0px;
 }
 
-#resume {
-  padding: 0px 0px !important;
-}
 .aboutImage {
   max-width: 100%;
 }
