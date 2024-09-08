@@ -471,17 +471,11 @@ li {
   top: 0;
 }
 
-.chart .percent {
-  color: #fff;
-  line-height: 152px;
-  display: inline-block;
-  font-size: 35px;
+.manImg {
+  width: 100%;
+  max-width: 140px;
+  object-fit: contain;
 }
-
-.chart .percent:after {
-  content: "%";
-}
-
 .squareItem {
   margin-top: 28px;
   position: relative;
