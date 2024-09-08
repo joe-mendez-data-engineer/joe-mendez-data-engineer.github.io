@@ -184,7 +184,8 @@ li {
 }
 
 .img-responsive {
-  width: 50%;
+  max-width: 25vw;
+  width: 100%%;
   height: 100%;
 }
 
