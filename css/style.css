@@ -457,7 +457,7 @@ li {
 .thanks-container img {
   width: 100%; /* Make the image responsive */
   height: 100%;
-  max-width: 25vw;
+  max-width: 20vw;
 }
 
 .chart {
