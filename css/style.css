@@ -456,27 +456,55 @@ li {
 
 .thanks-container img {
   width: 100%; /* Make the image responsive */
-  height: auto;
+  height: 100%;
+  max-width: 25vw;
 }
 
 .chart {
-  position: relative;
   width: 152px;
   height: 152px;
-  display: inline-block;
-  text-align: center;
+  position: relative;
 }
 
 .chart canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
 }
 
-.manImg {
-  width: 100%;
-  max-width: 140px;
-  object-fit: contain;
+.chart manImg {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+.chart img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.chart manImg img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 .squareItem {
   margin-top: 28px;
