@@ -614,6 +614,10 @@ svg {
     padding-bottom: 0px !important;
 }
 
+#navigation.navbar.navbar-expand-lg navbar-dark {
+  padding: 0px !important;
+}
+
 /**************************************** NavBar End  **************************************************/
 
 .loader {
