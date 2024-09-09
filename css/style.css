@@ -586,6 +586,8 @@ svg {
   -webkit-backdrop-filter: blur(10px);
   border: 0.25px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 #navigation li {
@@ -608,16 +610,11 @@ svg {
 }
 
 .navbar-brand img {
-    height: 30px; /* Adjust the height of the logo */
+    height: 40px; /* Adjust the height of the logo */
     width: auto;  /* Keeps the aspect ratio of the logo */
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
-
-#navigation.navbar.navbar-expand-lg navbar-dark {
-  padding: 0px !important;
-}
-
 /**************************************** NavBar End  **************************************************/
 
 .loader {
