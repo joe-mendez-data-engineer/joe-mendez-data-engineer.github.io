@@ -189,12 +189,7 @@ li {
 }
 
 @media only screen and (max-width: 1024px) {
-  .navbar-brand {
-    max-width: 25vw;
-  }
-  .navbar-brand .img-responsive {
-    width: 100%;
-  }
+
   .desktop-image {
     display: none;
   }
@@ -217,12 +212,6 @@ li {
 }
 
 @media only screen and (max-width: 750px) {
-  .navbar-brand {
-    max-width: 50vw;
-  }
-  .navbar-brand .img-responsive {
-    width: 100%;
-  }
   .desktop-image {
     display: none;
   }
@@ -313,16 +302,6 @@ li {
     text-align: center;
   }
 
-  .navbar-brand {
-    max-width: 60vw;
-    width: 100%;
-    
-  }
-  .navbar-brand .img-responsive {
-    width: 100%;
-    max-width: 20vw;
-    margin: 0 auto;
-  }
   p {
     font-size: 1rem;
     line-height: 1.4;
@@ -620,16 +599,17 @@ svg {
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #ffffff 2px;
-}
-
-div#navbarNav.collapse.navbar-collapse {
-  justify-content: right;
+  text-decoration: underline solid #1334d6 2px;
 }
 
 .fixedNav #navigation {
   position: fixed;
   top: 0;
+}
+
+.navbar-brand img {
+    height: 40px; /* Adjust the height of the logo */
+    width: auto;  /* Keeps the aspect ratio of the logo */
 }
 
 .loader {
