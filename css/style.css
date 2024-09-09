@@ -441,18 +441,23 @@ li {
 
 .chart {
   position: relative;
-  width: 152px;
-  height: 152px;
+  max-width: 152px;
+  max-height: 152px;
+  width: 100%;
   display: inline-block;
   text-align: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .chart canvas {
   margin: auto;
   display: block;
 }
+.canvas {
+  margin: auto;
+  display: block;
+}
+
 .squareItem {
   margin-top: 28px;
   position: relative;
