@@ -450,9 +450,8 @@ li {
 }
 
 .chart canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin: auto;
+  display: block;
 }
 .squareItem {
   margin-top: 28px;
