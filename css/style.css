@@ -572,14 +572,14 @@ svg {
 
 #navigation {
   margin-top: 1%;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-right: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-right: 35px;
   padding-left: 20px;
   z-index: 100;
   width: 100%;
-  max-width: 60vw;
-  border-radius: 35px;
+  max-width: 50vw;
+  border-radius: 45px;
   background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(10px);
   /* fallback for old browsers */
@@ -595,11 +595,11 @@ svg {
 
 #navigation li a {
   color: #ffffff;
-  font-size: 0.875rem !important;
+  font-size: 0.75rem !important;
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #1334d6 2px;
+  text-decoration: underline solid #1334d6 3px;
 }
 
 .fixedNav #navigation {
@@ -610,6 +610,8 @@ svg {
 .navbar-brand img {
     height: 40px; /* Adjust the height of the logo */
     width: auto;  /* Keeps the aspect ratio of the logo */
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .loader {
