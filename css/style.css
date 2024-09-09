@@ -569,7 +569,7 @@ svg {
   padding-bottom: 40px;
   width: 100%;
 }
-
+/****************************************      NavBar     **************************************************/
 #navigation {
   margin-top: 1%;
   margin-left: 25%;
@@ -595,11 +595,11 @@ svg {
 
 #navigation li a {
   color: #ffffff;
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #1334d6 3px;
+  text-decoration: underline double #1334d6 1px;
 }
 
 .fixedNav #navigation {
@@ -608,11 +608,13 @@ svg {
 }
 
 .navbar-brand img {
-    height: 40px; /* Adjust the height of the logo */
+    height: 30px; /* Adjust the height of the logo */
     width: auto;  /* Keeps the aspect ratio of the logo */
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
+
+/**************************************** NavBar End  **************************************************/
 
 .loader {
   width: 100%;
