@@ -613,6 +613,10 @@ svg {
   top: 0;
 }
 
+div#navbarNav.collapse.navbar-collapse {
+  justify-content: right;
+}
+
 .navbar-brand img {
     height: 40px; /* Adjust the height of the logo */
     width: auto;  /* Keeps the aspect ratio of the logo */
