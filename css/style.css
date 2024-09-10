@@ -425,7 +425,7 @@ li {
 }
 
 .thanks-container {
-  max-width: 20vw; /* Maximum width of the image container */
+  max-width: 30vw; /* Maximum width of the image container */
   margin: 0 auto;
 }
 
