@@ -594,11 +594,16 @@ svg {
 
 #navigation li a {
   color: #ffffff;
-  font-size: 1rem !important;
+  font-size: .875rem !important;
+  font-weight: 500;
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #00ADD8 3px;
+  text-decoration: underline solid #00ADD8 2px;
+}
+
+div#navbarNav.collapse.navbar-collapse {
+  justify-content: right;
 }
 
 .fixedNav #navigation {
@@ -606,15 +611,11 @@ svg {
   top: 0;
 }
 
-div#navbarNav.collapse.navbar-collapse {
-  justify-content: right;
-}
-
 .navbar-brand img {
     height: 35px; /* Adjust the height of the logo */
     width: auto;  /* Keeps the aspect ratio of the logo */
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
 }
 
 .img-responsive {
