@@ -515,7 +515,7 @@ li {
 
 .downloadButton:hover {
   transition: 0.75s ease-in-out;
-  background: #1334d6;
+  background: #00ADD8;
   color: #fff;
   text-decoration: none;
 }
