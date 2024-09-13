@@ -190,7 +190,7 @@ li {
   }
   .mobile-image {
     display: block;
-    padding-top: 50vh;
+    padding-top: 20vh;
     width: 100%; /* Make the image responsive */
     height: auto;
     padding-left: 10px;
@@ -212,7 +212,7 @@ li {
   }
   .mobile-image {
     display: block;
-    padding-top: 50vh;
+    padding-top: 25vh;
     width: 100%; /* Make the image responsive */
     height: auto;
     padding-left: 10px;
@@ -256,7 +256,7 @@ li {
   }
   .mobile-image {
     display: block;
-    padding-top: 40vh;
+    padding-top: 30vh;
     width: 100%; /* Make the image responsive */
     height: auto;
     padding-left: 10px;
@@ -360,6 +360,10 @@ li {
   .fixedNav #navigation {
     position: fixed;
     top: 0;
+  }
+  .navbar-brand img {
+    height: 50vw; /* Adjust the height of the logo */
+    width: auto;  /* Keeps the aspect ratio of the logo */
   }
 }
 
@@ -576,6 +580,7 @@ svg {
   z-index: 100;
   width: 100%;
   max-width: 50vw;
+  min-width: 1500px;
   border-radius: 45px;
   background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(10px);
