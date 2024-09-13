@@ -362,7 +362,7 @@ li {
     top: 0;
   }
   .navbar-brand img {
-    height: 50vw; /* Adjust the height of the logo */
+    height: 30vw; /* Adjust the height of the logo */
     width: auto;  /* Keeps the aspect ratio of the logo */
   }
 }
