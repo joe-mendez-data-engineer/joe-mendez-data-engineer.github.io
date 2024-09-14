@@ -381,6 +381,9 @@ li {
       padding-top: 1px !important;
       padding-bottom: 1px !important;
   }
+  .navbar-brand {
+    margin: 0 0 !important;
+  }
   .fixedNav #navigation {
     position: fixed;
     top: 0;
