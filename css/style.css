@@ -582,7 +582,7 @@ svg {
   z-index: 100;
   width: 100%;
   max-width: 50vw;
-  min-width: 750px;
+  min-width: 750px !important;
   border-radius: 45px;
   background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(10px);
