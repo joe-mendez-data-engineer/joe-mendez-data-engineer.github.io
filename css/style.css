@@ -152,7 +152,7 @@ body {
 }
 
 .desktop-device {
-    display:block;
+    display: block;
     width: 100%;
     height: 100%;
     border: none;
@@ -161,26 +161,17 @@ body {
 .mobile-device {
   display:none;
 }
-.desktop-device {
-    display:block;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.mobile-device {
-  display:none;
-}
-
 p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  font-weight: 300;
 }
 
 li {
   font-size: 1rem;
   margin-bottom: 10px;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -254,10 +245,6 @@ li {
       border-radius: 0px; /* Optional: remove border-radius on small screens */
     }
 
-  #navigation li a {
-    font-size: 0.8rem !important; /* Reduce font size for mobile */
-  }
-
   .navbar-brand img {
     height: 30px; /* Adjust logo size for mobile */
   }
@@ -276,7 +263,16 @@ li {
     padding-left: 10px;
     padding-right: 10px;
   }
+    .desktop-device {
+    display:none;
+  }
 
+  .mobile-device {
+    display:block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding: 0px 10px;
+  }
     .pdf-container {
     width: 100%;
     height: 100%; /* Make it responsive but not take full height on desktop */
@@ -344,21 +340,32 @@ li {
   }
 
   #navigation {
-    max-width: 100vw; /* Full width on smaller screens */
-    min-width: 100%; /* Prevents horizontal overflow */
-    border-radius: 0px; /* Optional: remove border-radius on small screens */
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 10px 10px !important;
+    z-index: 100;
+    width: 100% !important;
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+    /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
     margin-top: 0% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    z-index: 100;
+    border-radius: 0px !important;
+    max-width: 100vw !important;
   }
+    .navbar-brand img {
+    height: 25px; /* Adjust logo size for mobile */
+    width: auto;
+    }
   .fixedNav #navigation {
     position: fixed;
     top: 0;
   }
-  .navbar-brand img {
-    height: 25px; /* Adjust the height of the logo */
-    width: auto;  /* Keeps the aspect ratio of the logo */
-  }
+
+
 }
 /************************************** end of media @ 576px ****************************************/
 .flex-container {
@@ -567,12 +574,13 @@ svg {
 /****************************************      NavBar     **************************************************/
 #navigation {
   margin-top: 1%;
-  padding-right: 20px;
-  padding-left: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-right: 40px;
+  padding-left: 30px;
   z-index: 100;
   width: 100%;
   max-width: 50vw;
-  min-width: 750px !important;
   border-radius: 45px;
   background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(10px);
