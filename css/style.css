@@ -246,7 +246,7 @@ li {
     }
 
   .navbar-brand img {
-    height: 25px; /* Adjust logo size for mobile */
+    height: 20px; /* Adjust logo size for mobile */
     width: auto;
   }
 }
@@ -361,7 +361,7 @@ li {
     max-width: 100vw !important;
   }
     .navbar-brand img {
-    height: 20px; /* Adjust logo size for mobile */
+    height: 15px; /* Adjust logo size for mobile */
     width: auto;
     }
   .fixedNav #navigation {
