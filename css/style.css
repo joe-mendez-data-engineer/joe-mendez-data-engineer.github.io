@@ -240,14 +240,18 @@ li {
     height: auto;
   }
     #navigation {
-      max-width: 100vw; /* Full width on smaller screens */
-      min-width: 100%; /* Prevents horizontal overflow */
-      border-radius: 0px; /* Optional: remove border-radius on small screens */
+
     }
 
   .navbar-brand img {
     height: 20px; /* Adjust logo size for mobile */
     width: auto;
+  }
+  ul {
+    padding-left: 0px !important;
+  }
+    .heading-section {
+    text-align: center;
   }
 }
 
@@ -306,8 +310,9 @@ li {
   li {
     margin-bottom: 10px;
     font-size: 1rem;
-    padding-left: 2px !important;
-    padding-right: 2px !important;
+  }
+  ul {
+    padding-left: 0px !important;
   }
   container.text-center.quote {
     padding-left: 10px;
