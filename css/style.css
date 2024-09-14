@@ -174,18 +174,15 @@ li {
   font-weight: 300;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
 
   .desktop-image {
     display: none;
   }
   .mobile-image {
     display: block;
-    padding-top: 20vh;
     width: 100%; /* Make the image responsive */
     height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   div.thanks-container {
     max-width: 65vw; /* Maximum width of the image container */
@@ -195,15 +192,40 @@ li {
     width: 100%; /* Make the image responsive */
     height: auto;
   }
+  #navigation {
+    padding: 10px 10px !important;
+    z-index: 100;
+    width: 100% !important;
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(60px);
+    /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
+    margin-top: 0% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    z-index: 100;
+    border-radius: 0px !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+  }
 }
 
 @media only screen and (max-width: 750px) {
+  .landing-image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
   .desktop-image {
     display: none;
   }
   .mobile-image {
     display: block;
-    padding-top: 25vh;
     width: 100%; /* Make the image responsive */
     height: auto;
     padding-left: 10px;
@@ -270,28 +292,34 @@ li {
 
 /************************************** media @ 576px ****************************************/
 @media only screen and (max-width: 576px) {
+  .landing-image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
   .desktop-image {
     display: none;
   }
   .mobile-image {
     display: block;
-    padding-top: 30vh;
     width: 100%; /* Make the image responsive */
     height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-    .desktop-device {
+  .desktop-device {
     display:none;
   }
-
   .mobile-device {
     display: block;
     width: 100%; /* Make the image responsive */
     height: auto;
     padding: 0px 10px;
   }
-    .pdf-container {
+  .pdf-container {
     width: 100%;
     height: 100%; /* Make it responsive but not take full height on desktop */
     max-width: 95vw;
@@ -351,7 +379,6 @@ li {
   div.thanks-container {
     max-width: 60vw; /* Maximum width of the image container */
     height: 100%;
-    margin-auto: 0 auto;
   }
   .thanks-container img {
     width: 100%; /* Make the image responsive */
@@ -374,16 +401,14 @@ li {
     z-index: 100;
     border-radius: 0px !important;
     max-width: 100vw !important;
+    min-width: 100vw !important;
   }
   .navbar-brand img {
-      height: 7vw !important; /* Adjust the height of the logo */
-      width: auto;  /* Keeps the aspect ratio of the logo */
-      padding-top: 1px !important;
-      padding-bottom: 1px !important;
+    max-width: 70vw;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
   }
-  .navbar-brand {
-    margin: 0 0 !important;
-  }
+
   .fixedNav #navigation {
     position: fixed;
     top: 0;
@@ -575,7 +600,7 @@ svg {
   margin-top: 20px;
   border-radius: 35px;
   background: rgba(19, 52, 214, 0.15);
-  box-shadow: 0 4px 14px 0 #00ADD8;
+  box-shadow: 0 5px 12px 0 #00ADD8;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -602,8 +627,8 @@ svg {
   margin-top: 1%;
   margin-left: 25%;
   margin-right: 25%;
-  padding-right: 40px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 10px;
   z-index: 100;
   width: 100%;
   max-width: 50vw;
