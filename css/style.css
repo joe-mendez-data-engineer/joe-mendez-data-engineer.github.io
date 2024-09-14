@@ -388,9 +388,10 @@ li {
     position: fixed;
     top: 0;
   }
-  .resume-section:
-    padding-left: 5px;
-  }  
+
+  ul {
+    padding-left: 10px;
+  }
 }
 /************************************** end of media @ 576px ****************************************/
 .flex-container {
