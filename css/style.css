@@ -262,9 +262,7 @@ li {
       padding-top: 1px !important;
       padding-bottom: 1px !important;
   }
-  ul {
-    padding-left: 5px !important;
-  }
+
     .heading-section {
     text-align: center;
   }
@@ -325,9 +323,6 @@ li {
   li {
     margin-bottom: 10px;
     font-size: 1rem;
-  }
-  ul {
-     padding-left: 5px !important;
   }
   container.text-center.quote {
     padding-left: 10px;
@@ -390,6 +385,9 @@ li {
     position: fixed;
     top: 0;
   }
+  .resume-section:
+    padding-left: 5px;
+  }  
 }
 /************************************** end of media @ 576px ****************************************/
 .flex-container {
