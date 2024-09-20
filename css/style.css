@@ -1,7 +1,15 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
-  color: #ffffff;
-  background-color: #121212 !important;
+  background-color: rgb(51 51 51) !important;
   font-family: "Fira Sans", sans-serif !important;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .fira-sans-thin {
@@ -116,31 +124,41 @@ body {
   margin: 0 auto;
 }
 
+
 .landing-image-container {
   position: relative;
   width: 100%;
   height: 100vh; /* Full viewport height */
   overflow: hidden;
+  background: #121212;
+  z-index: 1;
 }
 
 /* Common styles for all landing images */
 .landing-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+  z-index: 2;
 }
 
 /* Default to desktop image */
 .desktop-image {
   display: block;
+  width: 60%;
+  height: auto;
+  z-index: 2;
+
 }
 
 .mobile-image {
   display: none;
 }
+
+/*******************************************PDF Viewer********************************************/
 .pdf-container {
     width: 80%;
     height: 80vh; /* Make it responsive but not take full height on desktop */
@@ -152,7 +170,7 @@ body {
 }
 
 .desktop-device {
-    display: block;
+    display:block;
     width: 100%;
     height: 100%;
     border: none;
@@ -161,6 +179,7 @@ body {
 .mobile-device {
   display:none;
 }
+/*******************************************END********************************************/
 p {
   font-size: 1rem;
   line-height: 1.6;
@@ -174,7 +193,22 @@ li {
   font-weight: 300;
 }
 
+/*******************************************     MOBILE @ 1024px  *******************************************/
 @media only screen and (max-width: 1025px) {
+  .landing-image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .desktop-device {
+    display:block;
+  }
+
+  .mobile-device {
+    display:none;
+  }
 
   .desktop-image {
     display: none;
@@ -183,6 +217,12 @@ li {
     display: block;
     width: 100%; /* Make the image responsive */
     height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container d-flex align-items-center {
+    margin-left: 15px;
+    margin-right: 15px;
   }
   div.thanks-container {
     max-width: 65vw; /* Maximum width of the image container */
@@ -193,7 +233,7 @@ li {
     height: auto;
   }
   #navigation {
-    padding: 10px 10px !important;
+
     z-index: 100;
     width: 100% !important;
     background: rgba(39, 39, 39, 0.1);
@@ -211,7 +251,9 @@ li {
     min-width: 100vw !important;
   }
 }
+/*******************************************END********************************************/
 
+/*******************************************    MOBILE @ 750px     ********************************************/
 @media only screen and (max-width: 750px) {
   .landing-image {
     position: relative;
@@ -220,7 +262,6 @@ li {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-
   .desktop-image {
     display: none;
   }
@@ -231,8 +272,29 @@ li {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  div.thanks-container {
+    max-width: 40vw; /* Maximum width of the image container */
+    height: 100%;
+  }
+  .thanks-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+  }
+  .heading-section {
+    text-align: center;
+  }
+  .desktop-device {
+    display:block;
+  }
+
+  .mobile-device {
+    display:none;
+  }
+  ul {
+    padding-left: 10px;
+  }
   #navigation {
-    padding: 10px 10px !important;
     z-index: 100;
     width: 100% !important;
     background: rgba(39, 39, 39, 0.1);
@@ -247,51 +309,26 @@ li {
     z-index: 100;
     border-radius: 0px !important;
     max-width: 100vw !important;
-  }
-  div.thanks-container {
-    max-width: 65vw; /* Maximum width of the image container */
-    height: 100%;
-  }
-  .thanks-container img {
-    width: 100%; /* Make the image responsive */
-    height: auto;
-  }
-  #about {
-    padding: 10 0;
-  }
-  .pdf-container {
-    width: 100%;
-    height: 100%; /* Make it responsive but not take full height on desktop */
-    max-width: 95vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: .1px solid transparent; /* Optional: To show boundaries */
-  }
-  .desktop-device {
-    display:none;
-  }
-
-  .mobile-device {
-    display: block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
+    min-width: 100vw !important;
   }
   .navbar-brand img {
-      height: 8vw; /* Adjust the height of the logo */
-      width: auto;  /* Keeps the aspect ratio of the logo */
-      padding-top: 1px !important;
-      padding-bottom: 1px !important;
-  }
-
-    .heading-section {
-    text-align: center;
+    height: 8vw; /* Adjust the height of the logo */
+    width: auto;  /* Keeps the aspect ratio of the logo */
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
   }
 }
+/*******************************************END********************************************/
 
-/************************************** media @ 576px ****************************************/
+
+/******************************************* MOBILE @ 576px ********************************************/
 @media only screen and (max-width: 576px) {
+  body {
+    background-color: rgb(51 51 51) !important;
+    font-family: "Fira Sans", sans-serif !important;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .landing-image {
     position: relative;
     top: 50%;
@@ -303,22 +340,21 @@ li {
   .desktop-image {
     display: none;
   }
+
   .mobile-image {
     display: block;
     width: 100%; /* Make the image responsive */
     height: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .desktop-device {
-    display:none;
+
+   #navbar .navbar.navbar-expand-lg.navbar-dark {
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
   }
-  .mobile-device {
-    display: block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    padding: 0px 10px;
-  }
+
   .pdf-container {
     width: 100%;
     height: 100%; /* Make it responsive but not take full height on desktop */
@@ -329,13 +365,15 @@ li {
     align-items: center;
     border: .1px solid transparent; /* Optional: To show boundaries */
   }
-  #about {
-    padding: 10 0;
+  .desktop-device {
+    display:none;
   }
-  h5.heading-section {
-    text-align: center;
-    font-weight: 400;
-    font-style: normal;
+
+  .mobile-device {
+    display:block;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    padding: 0px 10px;
   }
 
   .heading-section {
@@ -347,7 +385,6 @@ li {
     line-height: 1.4;
     margin-bottom: 10px;
   }
-
   li {
     margin-bottom: 10px;
     font-size: 1rem;
@@ -370,6 +407,7 @@ li {
   .text-box {
     max-width: 95vw;
     width: 100%;
+    border-radius: 30px !important;
   }
   .text-box2 {
     max-width: 95vw;
@@ -377,7 +415,7 @@ li {
   }
 
   div.thanks-container {
-    max-width: 60vw; /* Maximum width of the image container */
+    max-width: 70vw; /* Maximum width of the image container */
     height: 100%;
   }
   .thanks-container img {
@@ -386,8 +424,6 @@ li {
   }
 
   #navigation {
-    padding: 10px 10px !important;
-    z-index: 100;
     width: 100% !important;
     background: rgba(39, 39, 39, 0.1);
     backdrop-filter: blur(60px);
@@ -395,18 +431,19 @@ li {
     -webkit-backdrop-filter: blur(60px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
-    margin-top: 0% !important;
-    margin-left: 0% !important;
-    margin-right: 0% !important;
     z-index: 100;
     border-radius: 0px !important;
     max-width: 100vw !important;
     min-width: 100vw !important;
+
   }
-  .navbar-brand img {
-    max-width: 70vw;
-    padding-top: 1px !important;
-    padding-bottom: 1px !important;
+
+  .navbar-toggler ml-auto {
+    margin: 0 auto;
+
+  }
+  .navbar-collapse collapse show {
+      background-color: #121212;
   }
 
   .fixedNav #navigation {
@@ -414,17 +451,34 @@ li {
     top: 0;
   }
 
-  ul {
-    padding-left: 10px;
+  .headingImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90vw;
+  }
+  .resume-section ul {
+    padding-left: 15px;
+  }
+  .resume-section2 ul {
+    padding-left: 15px;
+  }
+  .navbar-brand img {
+    max-width: 70vw;
+    padding-top: 1px !important;
+    padding-bottom: 3px !important;
   }
 }
-/************************************** end of media @ 576px ****************************************/
+/*******************************************END********************************************/
+
 .flex-container {
   display: flex;
 }
 
 .text-box {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -432,22 +486,30 @@ li {
   margin: 0 auto;
   width: 100%;
   max-width: 540px;
-  padding: 14px 70px;
-  background: rgba(18, 18, 18, 0.25);
+  padding: 12px 50px;
+  background: rgba( 18, 18, 18, 0.25 );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
   border-radius: 0px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #f1f1f1;
-  z-index: 1;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: #ffffff;
+  z-index: 5;
   white-space: nowrap;
+  font-size: 1.75rem;
   font-weight: 400;
-  font-style: normal;
-}
-.section {
-  padding: 40px 0px;
-}
+  }
+
+.headingImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 540px;
+  }
+
 
 .aboutImage {
   max-width: 100%;
@@ -458,30 +520,339 @@ li {
   font-size: large;
 }
 
+
+
+/***************************************************    Sections       *****************************************/
+
+#message {
+  margin: 0 auto;
+}
+
+.section {
+  padding: 40px 0;
+  background-color: rgb(12 12 12);
+  color:#ffffff;
+  border-radius: 30px;
+  border: solid 1px rgb(51 51 51);
+}
+
+#intro {
+  padding: 40px 0;
+  background-color: rgb(12 12 12);
+  color:#ffffff;
+  border-radius: 30px;
+  border: solid 1px rgb(51 51 51);
+}
+
+
+#gap {
+  background-color: rgb(51 51 51);
+  height: 16px;
+  max-height: 16px;
+  min-height: 16px;
+}
+
+
 .skillsSection.section {
-  background-color: #121212;
+  background-color: rgb(12 12 12);
   color: #ffffff;
 }
 
 .statsSection h4 {
-  color: #333333;
+  color: #ffffff;
 }
 
 .contactSection {
-  background-color: #121212 !important;
+  background-color: rgb(12 12 12) !important;
   color: #ffffff !important;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
 }
 
 .statsSection {
-  background-color: #121212 !important;
+  background-color: rgb(12 12 12) !important;
+  margin: 0 auto;
 }
+
+.div-wrapper img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#nvidiacolor {
+  color: #76BB02;
+}
+
+#message {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+}
+
+#about {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+}
+
+#work {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+}
+
+#numbers {
+  background-color: rgb(12 12 12) !important;
+  border-radius: 30px;
+  object-fit: contain !important;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+}
+
+#numbers .section .statsSection container text-center{
+  position: relative; /* Ensure the content is above the background image */
+  z-index: 20; /* Content is on top */
+}
+
+#resume {
+  background-color: rgb(12 12 12) !important;
+  border-radius: 30px;
+  /*object-fit: contain !important;*/
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  margin: 0 auto;;
+
+}
+
+.resume container text-center{
+  position: relative; /* Ensure the content is above the background image */
+  z-index: 20; /* Content is on top */
+}
+
+#slides {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.about-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0) , rgba(0, 0, 0, 0));
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 70%;
+  width: 40%;
+  height: 100%;
+  object-fit: cover ;
+  object-position: center;
+}
+
+.about-container img {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.main-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover ;
+  object-position: center;
+}
+
+.main-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.message-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  right: 70%;
+  width: 40%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover ; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.message-container img {
+  max-width: 100%;
+  height: auto;
+ }
+
+.background-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 55%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover ; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.background-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.resume-image-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover ;
+  object-position: center;
+}
+
+.resume-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.experience-image-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  right:60%;
+  width: 40%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover ; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.experience-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 65%;
+  width: 35%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover ; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.contact-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.resume-section {
+  background-color: rgb(12 12 12) !important;
+  border-radius: 30px;
+  /*object-fit: contain !important;*/
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  color:#ffffff !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.resume-section2 {
+  background-color: rgb(12 12 12) !important;
+  border-radius: 30px;
+  object-fit: contain !important;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  color:#ffffff !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.resume2-image-container {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left:70%;
+  width: 40%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover ; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+.resume2-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headings */
+.section .heading {
+  text-align: center;
+  width: 100%;
+}
+
+.heading-section {
+  color: #ffffff !important;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/***************************************************    END Sections       *****************************************/
 
 .skill {
   text-align: center;
 }
 
 .thanks-container {
-  max-width: 10vw; /* Maximum width of the image container */
+  max-width: 15vw; /* Maximum width of the image container */
   margin: 0 auto;
 }
 
@@ -492,21 +863,26 @@ li {
 
 .chart {
   position: relative;
-  max-width: 152px;
-  max-height: 152px;
-  width: 100%;
+  width: 152px;
+  height: 152px;
   display: inline-block;
   text-align: center;
-  align-items: center;
 }
 
-.chart canvas {
+canvas {
   margin: auto;
   display: block;
 }
-.canvas {
-  margin: auto;
-  display: block;
+
+.chart .percent {
+  color: #fff;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.chart .percent:after {
+  content: "%";
 }
 
 .squareItem {
@@ -519,11 +895,11 @@ li {
   padding: 25px 35px;
   text-align: center;
   border-radius: 10px;
-  background: rgba(19, 52, 214, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba( 19, 52, 214, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .squareContent h2 {
@@ -552,6 +928,7 @@ li {
   margin-bottom: 20px;
 }
 
+/*********************************************      Buttons       ********************************/
 .downloadButton {
   color: #ffffff;
   font-size: 1.275rem;
@@ -561,19 +938,22 @@ li {
   margin-top: 20px;
   border-radius: 35px;
   background: rgba(19, 52, 214, 0.15);
-  box-shadow: 0 4px 12px 0 #00ADD8;
+  box-shadow: 0 5px 12px 0 #00ADD8;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   outline: none;
-  transition: 0.75s ease-in-out;
+  transition: .75s ease-in-out;
 }
 
 .downloadButton:hover {
-  transition: 0.75s ease-in-out;
-  background: #00ADD8;
-  color: #fff;
+  transition: 2s ease-in-out;
+  background: #FFFE00;
+  color: #000;
+  background: rgba(254, 254, 0, 0.90);
+  box-shadow: 0 5px 15px 0 #FFFE00;
   text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.55);
 }
 
 .downloadButton:hover svg {
@@ -588,7 +968,7 @@ svg {
   stroke: #fff;
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
-  transition: 0.75s ease-in-out;
+  transition: 1.50s ease-in-out;
 }
 
 .contactButton {
@@ -605,41 +985,54 @@ svg {
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   outline: none;
-  transition: 0.75s ease-in-out;
+  transition: .75s ease-in-out;
 }
 
 .contactButton:hover {
-  transition: 0.75s ease-in-out;
-  background: #00ADD8;
-  color: #fff;
+  transition: 2.5s ease-in-out;
+  background: #FFFE00;
+  color: #000;
+  background: rgba(254, 254, 0, 0.90);
+  box-shadow: 0 5px 15px 0 #FFFE00;
   text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.55);
 }
 
 .contactButton:hover svg {
   stroke-dashoffset: -480;
 }
-.section .heading {
-  text-align: center;
-  width: 100%;
+/********************************************* End Buttons   ********************************/
+
+.joemendezhughes {
+border: 1px solid #1334D6;
+padding: 20px 20px;
+background-color: rgb(12 12 12);
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 0 auto;
+box-shadow: 0 2px 10px 0 #1334D6;
 }
-/****************************************      NavBar     **************************************************/
+
+
+/********************************************     NAVBAR          ********************************/
 #navigation {
-  margin-top: 1%;
-  margin-left: 25%;
-  margin-right: 25%;
-  padding-right: 20px;
-  padding-left: 10px;
-  z-index: 100;
+  margin-top: .75%;
+  margin-bottom: .75%;
+  z-index: 1000;
   width: 100%;
   max-width: 50vw;
-  border-radius: 45px;
+  border-radius: 9999px;
   background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(10px);
   /* fallback for old browsers */
   -webkit-backdrop-filter: blur(10px);
   border: 0.25px solid rgba(255, 255, 255, 0.2);
-  padding-top: 3px !important;
-  padding-bottom: 3px !important;
+  min-width: 750px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
   min-width: 750px;
 }
 
@@ -651,11 +1044,10 @@ svg {
 #navigation li a {
   color: #ffffff;
   font-size: .875rem !important;
-  font-weight: 500;
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #00ADD8 2px;
+  text-decoration: underline solid #FFFE00 2px;
 }
 
 div#navbarNav.collapse.navbar-collapse {
@@ -667,23 +1059,27 @@ div#navbarNav.collapse.navbar-collapse {
   top: 0;
 }
 
+.navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-right: 0px;
+
+}
+
 .navbar-brand img {
-    height: 35px; /* Adjust the height of the logo */
+    height: 30px; /* Adjust the height of the logo */
     width: auto;  /* Keeps the aspect ratio of the logo */
-    padding-top: 3px !important;
-    padding-bottom: 3px !important;
 }
 
 .img-responsive {
   width: 100%;
   height: 100%;
 }
-/**************************************** NavBar End  **************************************************/
-
+/********************************************     END NAVBAR      ********************************/
 .loader {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -693,11 +1089,12 @@ div#navbarNav.collapse.navbar-collapse {
 .loader .inner {
   width: 100%;
   height: 100%;
-  background: url(../img/asteroid.gif) center center no-repeat;
-  background-color: #f5f8fa;
+  background: url(../img/Sphere_rotating_transparency.gif) center center no-repeat;
+  background-color: #000000;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 div.skill {
   margin-top: 20px;
 }
@@ -720,7 +1117,7 @@ a {
   position: absolute;
   width: 100%;
   height: auto;
-  bottom: 5%;
+  bottom: 20%;
   z-index: 5;
   text-align: center;
 }
@@ -730,26 +1127,45 @@ a {
   margin: 5% 0;
 }
 
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  } /* Closing the first block */
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid #00ADD8;
+  border-right: 5px solid #00ADD8;
+  transform: rotate(45deg);
+  margin-bottom: 20px;
+  margin: -10px;
+  animation: animate 2s infinite;
+  z-index: 2;
+}
 
-  40% {
-    transform: translateY(-30px);
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
   }
-
-  60% {
-    transform: translateY(-15px);
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
   }
 }
