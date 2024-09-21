@@ -489,8 +489,8 @@ li {
   padding: 12px 50px;
   background: rgba( 18, 18, 18, 0.25 );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur( 9px );
-  -webkit-backdrop-filter: blur( 9px );
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
   border-radius: 0px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: #ffffff;
@@ -932,9 +932,9 @@ canvas {
   border-radius: 10px;
   background: rgba( 19, 52, 214, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 10px );
+  backdrop-filter: blur( 14px );
   -webkit-backdrop-filter: blur( 10px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(38, 0, 255, 0.18);
 }
 
 .squareContent h2 {
@@ -982,11 +982,10 @@ canvas {
 }
 
 .downloadButton:hover {
-  transition: 2s ease-in-out;
-  background: #FFFE00;
+  transition: 2.5s ease-in-out;
+  background: #00ADD8;
   color: #000;
-  background: rgba(254, 254, 0, 0.90);
-  box-shadow: 0 5px 15px 0 #FFFE00;
+  box-shadow: 0 5px 15px 0 #00ADD8;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.55);
 }
@@ -1025,10 +1024,9 @@ svg {
 
 .contactButton:hover {
   transition: 2.5s ease-in-out;
-  background: #FFFE00;
+  background: #00ADD8;
   color: #000;
-  background: rgba(254, 254, 0, 0.90);
-  box-shadow: 0 5px 15px 0 #FFFE00;
+  box-shadow: 0 5px 15px 0 #00ADD8;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.55);
 }
@@ -1082,7 +1080,7 @@ box-shadow: 0 2px 10px 0 #1334D6;
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #FFFE00 2px;
+  text-decoration: underline solid #00ADD8 2px;
 }
 
 div#navbarNav.collapse.navbar-collapse {
@@ -1114,7 +1112,7 @@ div#navbarNav.collapse.navbar-collapse {
 .loader {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -1125,7 +1123,7 @@ div#navbarNav.collapse.navbar-collapse {
   width: 100%;
   height: 100%;
   background: url(../img/asteroid.gif) center center no-repeat;
-  background-color: #f5f8fa;
+  background-color: #000000;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
