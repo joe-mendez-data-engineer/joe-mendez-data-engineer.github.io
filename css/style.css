@@ -799,6 +799,23 @@ li {
   justify-content: center; /* Center content horizontally */
 }
 
+.resume-section1 {
+  background-color: rgb(12 12 12) !important;
+  border-radius: 30px;
+  object-fit: contain !important;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  color:#ffffff !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
 .resume-section2 {
   background-color: rgb(12 12 12) !important;
   border-radius: 30px;
@@ -829,6 +846,24 @@ li {
   object-position: center;
 }
 .resume2-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.resume1-image-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  right: 65%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover ; /* Ensures the image covers the section without distortion */
+  object-position: center;
+  z-index: 1;
+}
+.resume1-image-container img {
   max-width: 100%;
   height: auto;
 }
@@ -1079,7 +1114,7 @@ div#navbarNav.collapse.navbar-collapse {
 .loader {
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #ffffff;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -1089,8 +1124,8 @@ div#navbarNav.collapse.navbar-collapse {
 .loader .inner {
   width: 100%;
   height: 100%;
-  background: url(../img/Sphere_rotating_transparency.gif) center center no-repeat;
-  background-color: #000000;
+  background: url(../img/asteroid.gif) center center no-repeat;
+  background-color: #f5f8fa;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
