@@ -799,7 +799,7 @@ li {
   pointer-events: none; /* Prevent interactions with the image */
   position: absolute; /* So it can stretch behind everything */
   top: 0;
-  left: 60%;
+  left: 70%;
   width: 50%; /* Make the image span the entire width */
   height: 100; /* Make the image span the entire height */
   object-fit: cover; /* Ensures the image covers the section without distortion */
