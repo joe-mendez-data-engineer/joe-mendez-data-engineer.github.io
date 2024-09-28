@@ -596,6 +596,39 @@ li {
   color: #76BB02;
 }
 
+#intro {
+  background-color: rgb(12 12 12) !important;
+  border-radius: 30px;
+  /*object-fit: contain !important;*/
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+  margin: 0 auto;
+}
+
+.intro-container {
+  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  right: 80%;
+  width: 80%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.intro-container img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: 1;
+}
+
 #message {
   position: relative;
   overflow: hidden; /* Ensures the image is contained in the section */
@@ -605,7 +638,17 @@ li {
   border: solid 1px rgb(51 51 51);
 }
 
+
 #about {
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  display: flex; /* For layout purposes, adjust if necessary */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  border: solid 1px rgb(51 51 51);
+}
+
+#contact {
   position: relative;
   overflow: hidden; /* Ensures the image is contained in the section */
   display: flex; /* For layout purposes, adjust if necessary */
@@ -649,7 +692,7 @@ li {
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
   border: solid 1px rgb(51 51 51);
-  margin: 0 auto;;
+  margin: 0 auto;
 
 }
 
@@ -727,7 +770,7 @@ li {
   pointer-events: none; /* Prevent interactions with the image */
   position: absolute; /* So it can stretch behind everything */
   top: 0;
-  left: 55%;
+  left: 60%;
   width: 50%; /* Make the image span the entire width */
   height: 100%; /* Make the image span the entire height */
   object-fit: cover ; /* Ensures the image covers the section without distortion */
@@ -776,14 +819,14 @@ li {
 }
 
 .contact-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to right, rgb(0, 0, 0, .3), rgba(0, 0, 0, 0));
   z-index: 1;
   pointer-events: none; /* Prevent interactions with the image */
   position: absolute; /* So it can stretch behind everything */
   top: 0;
-  left: 65%;
-  width: 40%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
+  left: 60%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100; /* Make the image span the entire height */
   object-fit: cover ; /* Ensures the image covers the section without distortion */
   object-position: center;
   -webkit-transform: scaleX(-1);
