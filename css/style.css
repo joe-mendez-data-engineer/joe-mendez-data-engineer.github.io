@@ -794,16 +794,18 @@ li {
 }
 
 .contact-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0, .3), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to right, rgb(0, 0, 0, .3), rgba(0, 0, 0, 0));
   z-index: 1;
   pointer-events: none; /* Prevent interactions with the image */
   position: absolute; /* So it can stretch behind everything */
   top: 0;
-  left: 65%;
+  left: 50%;
   width: 50%; /* Make the image span the entire width */
   height: 100; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-fit: cover ; /* Ensures the image covers the section without distortion */
   object-position: center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .contact-container img {
