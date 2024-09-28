@@ -800,7 +800,7 @@ li {
   position: absolute; /* So it can stretch behind everything */
   top: 0;
   left: 65%;
-  width: 60%; /* Make the image span the entire width */
+  width: 50%; /* Make the image span the entire width */
   height: 100; /* Make the image span the entire height */
   object-fit: cover; /* Ensures the image covers the section without distortion */
   object-position: center;
