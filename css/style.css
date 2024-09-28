@@ -470,9 +470,17 @@ li {
   .resume-section ul {
     padding-left: 15px;
   }
-  .resume-section2, .resume-section3, .resume-section4 ul {
+.resume-section2  ul {
     padding-left: 15px;
-  }
+}
+.resume-section3 ul {
+  padding-left: 15px;
+}
+.resume-section4 ul {
+  padding-left: 15px;
+}
+
+  
   .navbar-brand img {
     max-width: 70vw;
     padding-top: 1px !important;
