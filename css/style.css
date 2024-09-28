@@ -802,10 +802,8 @@ li {
   left: 60%;
   width: 50%; /* Make the image span the entire width */
   height: 100; /* Make the image span the entire height */
-  object-fit: cover ; /* Ensures the image covers the section without distortion */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
   object-position: center;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 
 .contact-container img {
