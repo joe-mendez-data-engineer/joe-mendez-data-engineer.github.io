@@ -397,7 +397,6 @@ li {
 .experience-image-container img,
 .intro-container img,
 .message-container img,
-.resume-image-container img,
 .resume1-image-container img,
 .resume2-image-container img,
 .resume3-image-container img,
@@ -584,8 +583,7 @@ h6 {
     object-fit: cover;
     object-position: center;
 }
-.background-container,
-.resume-image-container {
+.background-container {
     mask-image: linear-gradient(to left, #000000, #fff0);
     height: 100%;
     position: absolute;
@@ -598,10 +596,6 @@ h6 {
 .background-container {
     left: 60%;
     width: 50%;
-}
-.resume-image-container {
-    left: 40%;
-    width: 100%;
 }
 .experience-image-container {
     mask-image: linear-gradient(to right, #000000, #fff0);
