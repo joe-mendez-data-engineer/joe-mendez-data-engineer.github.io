@@ -94,9 +94,11 @@ p {
 .fira-sans-black-italic {
     font-weight: 900;
 }
-.joemendezhughes,
+.joemendezhughes {
+    font-family: "Inter", sans-serif;
+}
 .text-box {
-    font-family: Inter, sans-serif;
+    font-family: "Fira Sans", sans-serif;
 }
 #document,
 #message {
@@ -136,7 +138,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .desktop-device {
     display: block;
@@ -429,6 +431,7 @@ li {
     white-space: nowrap;
     font-size: 1.75rem;
     font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 #intro,
 .section,
@@ -486,7 +489,13 @@ h6 {
     justify-content: center;
     border: 1px solid #333;
 }
-#about,
+#about.section {
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    border: solid .20px #1334d6;
+}
+
 #contact,
 #intro,
 #message,
@@ -503,9 +512,6 @@ h6 {
     position: absolute;
     left: 0;
     bottom: 0;
-}
-#nvidiacolor {
-    color: #76bb02;
 }
 #intro,
 #resume {
@@ -715,7 +721,7 @@ canvas {
     background: rgb(19 52 214 / 0.1);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .squareContent h2 {
     font-size: 3.5rem;
@@ -734,20 +740,22 @@ canvas {
 }
 .contactButton,
 .downloadButton {
-    color: #fff;
-    font-size: 1.275rem;
-    font-weight: 400;
-    padding: 0.6rem 1.95rem;
+    color: #ffffff;
     display: inline-block;
-    margin-top: 20px;
-    border-radius: 35px;
     background: rgb(19 52 214 / 0.15);
     box-shadow: 0 5px 12px 0 #00add8;
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(0, 173, 216, .35);
     outline: 0;
     transition: 1.5s ease-in-out;
+    height: 60px;
+    width: 61px;
+    border-radius: 9999px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 58px;
+    text-align: center;
 }
 #navigation li,
 .joemendezhughes {
@@ -758,7 +766,7 @@ canvas {
 .downloadButton:hover {
     transition: 0.75s ease-in-out;
     background: #00add8;
-    color: #000;
+    color: #000000;
     box-shadow: 0 3px 4px 0 #1334d6;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.18);
