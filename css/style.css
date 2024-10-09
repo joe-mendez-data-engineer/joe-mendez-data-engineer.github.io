@@ -741,22 +741,34 @@ canvas {
 .contactButton,
 .downloadButton {
     color: #ffffff;
-    display: inline-block;
     background: rgb(19 52 214 / 0.15);
     box-shadow: 0 5px 12px 0 #00add8;
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     border: 1px solid rgba(0, 173, 216, .35);
-    outline: 0;
     transition: 1.5s ease-in-out;
     height: 60px;
-    width: 61px;
+    width: 60px;
     border-radius: 9999px;
-    margin: 0 auto;
-    padding: 0;
-    line-height: 58px;
-    text-align: center;
+    line-height: 59px;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
 }
+.contactButton,
+.downloadButton i {
+    margin: 0 auto;
+    padding-left: 1px;
+}
+
+.downloadButton i {
+    padding-left: 2px;
+}
+
+
+
+
+
 #navigation li,
 .joemendezhughes {
     margin: 0 auto;
