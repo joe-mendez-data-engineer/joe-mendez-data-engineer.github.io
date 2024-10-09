@@ -24,12 +24,15 @@ body {
     padding-left: 48px;
     padding-right: 48px;
 }
-.inter-fonts {
-    font-family: Inter, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.ubuntu-sans-fonts {
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
+
 .fira-sans-black,
 .fira-sans-bold,
 .fira-sans-extrabold,
@@ -54,12 +57,6 @@ body {
 }
 .fira-sans-bold {
     font-weight: 700;
-}
-.fira-sans-extrabold {
-    font-weight: 800;
-}
-.fira-sans-black {
-    font-weight: 900;
 }
 .fira-sans-light-italic,
 li,
@@ -88,14 +85,8 @@ p {
 .fira-sans-bold-italic {
     font-weight: 700;
 }
-.fira-sans-extrabold-italic {
-    font-weight: 800;
-}
-.fira-sans-black-italic {
-    font-weight: 900;
-}
 .joemendezhughes {
-    font-family: "Inter", sans-serif;
+    font-family: "Ubuntu Sans", sans-serif;
 }
 .text-box {
     font-family: "Fira Sans", sans-serif;
