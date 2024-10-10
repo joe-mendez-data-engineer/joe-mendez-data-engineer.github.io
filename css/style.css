@@ -749,6 +749,7 @@ canvas {
 .contactButton,
 .downloadButton i {
     margin: 0 auto;
+    padding-left: 1px;
 }
 #navigation li,
 .joemendezhughes {
