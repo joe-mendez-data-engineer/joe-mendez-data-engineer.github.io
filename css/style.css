@@ -746,10 +746,13 @@ canvas {
     top: 50%;
     left: 50%;
 }
-.contactButton,
+.contactButton {
+    margin: 0 auto;
+}
+
 .downloadButton i {
     margin: 0 auto;
-    padding-left: 1px;
+    padding-left: 1px    
 }
 #navigation li,
 .joemendezhughes {
