@@ -249,15 +249,11 @@ li {
         padding-top: 1px !important;
         padding-bottom: 1px !important;
     }
-    .downloadButton, .contactButton {
+.downloadButton, .contactButton {
     color: #000000 !important;
-    background: background: #00add8; !important;
+    background: #00add8; !important;
     border: 2px solid transparent !important;
     box-shadow: none !important;
-  }
-
-  .downloadButton:hover, .contactButton:hover {
-    display: none;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -385,13 +381,9 @@ li {
     }
 .downloadButton, .contactButton {
     color: #000000 !important;
-    background: background: #00add8; !important;
+    background: #00add8; !important;
     border: 2px solid transparent !important;
     box-shadow: none !important;
-  }
-
-  .downloadButton:hover, .contactButton:hover {
-    display: none;
   }
 }
 .about-container,
