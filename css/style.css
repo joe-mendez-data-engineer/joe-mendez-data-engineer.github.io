@@ -249,12 +249,20 @@ li {
         padding-top: 1px !important;
         padding-bottom: 1px !important;
     }
-.downloadButton, .contactButton {
+.downloadButton {
+    background: #00add8 !important;
     color: #000000 !important;
-    background: #00add8; !important;
-    border: 2px solid transparent !important;
-    box-shadow: none !important;
+    box-shadow: 0 3px 4px 0 #1334d6 !important;
+    text-decoration: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
   }
+.contactButton {
+    background: #00add8 !important;
+    color: #000000 !important;
+    box-shadow: 0 3px 4px 0 #1334d6 !important;
+    text-decoration: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
 }
 @media only screen and (max-width: 576px) {
     li,
@@ -379,12 +387,20 @@ li {
         padding-top: 1px !important;
         padding-bottom: 3px !important;
     }
-.downloadButton, .contactButton {
+.downloadButton {
+    background: #00add8 !important;
     color: #000000 !important;
-    background: #00add8; !important;
-    border: 2px solid transparent !important;
-    box-shadow: none !important;
+    box-shadow: 0 3px 4px 0 #1334d6 !important;
+    text-decoration: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
   }
+.contactButton {
+    background: #00add8 !important;
+    color: #000000 !important;
+    box-shadow: 0 3px 4px 0 #1334d6 !important;
+    text-decoration: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    }
 }
 .about-container,
 .intro-container {
