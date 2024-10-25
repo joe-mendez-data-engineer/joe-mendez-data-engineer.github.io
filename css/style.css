@@ -33,7 +33,6 @@ body {
     "wdth" 100;
 }
 
-.fira-sans-black,
 .fira-sans-bold,
 .fira-sans-extrabold,
 .fira-sans-light,
@@ -63,7 +62,6 @@ li,
 p {
     font-weight: 300;
 }
-.fira-sans-black-italic,
 .fira-sans-bold-italic,
 .fira-sans-extrabold-italic,
 .fira-sans-light-italic,
@@ -328,7 +326,7 @@ li {
         display: block;
         width: 100%;
         height: auto;
-        padding: 0 10px;
+        padding: 0 0px;
     }
     p {
         line-height: 1.4;
@@ -541,11 +539,11 @@ h6 {
     margin: 0 auto;
 }
 .intro-container {
-    mask-image: linear-gradient(to right, #000000, #fff0);
+    mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     z-index: 1;
     position: absolute;
-    right: 76%;
-    width: 80%;
+    right: 72%;
+    width: 70%;
 }
 #about,
 #contact,
@@ -588,7 +586,7 @@ h6 {
     color: #fff !important;
 }
 .about-container {
-    mask-image: linear-gradient(to left, #000000, #fff0);
+    mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     z-index: 2;
     position: absolute;
     left: 70%;
@@ -598,7 +596,7 @@ h6 {
     z-index: 1;
 }
 .message-container {
-    mask-image: linear-gradient(to right, #000000, #fff0);
+    mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     z-index: 1;
     pointer-events: none;
     position: absolute;
@@ -610,7 +608,7 @@ h6 {
     object-position: center;
 }
 .background-container {
-    mask-image: linear-gradient(to left, #000000, #fff0);
+    mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     height: 100%;
     position: absolute;
     object-fit: cover;
@@ -624,7 +622,7 @@ h6 {
     width: 50%;
 }
 .experience-image-container {
-    mask-image: linear-gradient(to right, #000000, #fff0);
+    mask-image: linear-gradient(to right,rgb(0, 0, 0), rgba(0, 0, 0, 0));
     z-index: 1;
     pointer-events: none;
     position: absolute;
@@ -636,12 +634,12 @@ h6 {
     object-position: center;
 }
 .contact-container {
-    mask-image: linear-gradient(to left, rgb(0 0 0 / 0.3), #fff0);
+    mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     z-index: 1;
     pointer-events: none;
     position: absolute;
     top: 0;
-    left: 65%;
+    left: 55%;
     width: 50%;
     height: 100;
     object-fit: cover;
@@ -675,7 +673,7 @@ svg {
 .resume2-image-container,
 .resume3-image-container,
 .resume4-image-container {
-    mask-image: linear-gradient(to right, #000000, #fff0);
+    mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -758,6 +756,7 @@ canvas {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+/*************************************************** buttons ************************************/
 .contactButton,
 .downloadButton {
     color: #ffffff;
@@ -782,16 +781,15 @@ canvas {
 .contactButton {
     margin: 0 auto;
 }
-
+.contactButton i {
+    margin: 0 auto;
+    padding-left: 1px;
+}
 .downloadButton i {
     margin: 0 auto;
-    padding-left: 1px    
+    padding-left: 1.5px
 }
-#navigation li,
-.joemendezhughes {
-    margin: 0 auto;
-    color: #fff;
-}
+
 .contactButton:hover,
 .downloadButton:hover {
     transition: 0.75s ease-in-out;
@@ -812,6 +810,11 @@ svg {
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
     transition: 1.5s ease-in-out;
+}
+#navigation li,
+.joemendezhughes {
+    margin: 0 auto;
+    color: #fff;
 }
 .joemendezhughes {
     border: 1px solid #1334d6;
@@ -936,4 +939,25 @@ a {
   60% {
     transform: translateY(-15px);
   }
+}
+
+/* Basic styling for the image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mobile-device {
+    transition:transform 0.25s ease;
+}
+
+.mobile-device:hover {
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition:transform 0.25s ease;
+    margin-bottom: 50px;
+}
+body.no-scroll {
+    overflow: hidden;
 }
