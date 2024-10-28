@@ -1,8 +1,8 @@
 li {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .squareInnerContainer,
@@ -23,35 +23,25 @@ a {
 }
 body {
   background-color: #333 !important;
-  font-family: "PT Sans", sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
   padding-left: 48px;
   padding-right: 48px;
 }
-
-.pt-sans-regular {
-  font-family: "PT Sans", sans-serif;
+.newsreader-font {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.pt-sans-bold {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.pt-sans-regular-italic {
-  font-family: "PT Sans", sans-serif;
+.noto-sans-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: italic;
+  font-style:normal;
+  font-variation-settings:
+    "wdth" 100;
 }
-
-.pt-sans-bold-italic {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 .carlito-regular {
   font-family: "Carlito", sans-serif;
   font-weight: 400;
@@ -67,6 +57,10 @@ body {
   font-family: "Carlito", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+p.quote {
+  font-family: "Newsreader", serif !important;
 }
 
 .joemendezhughes {
@@ -436,8 +430,8 @@ li {
   pointer-events: none;
   position: absolute;
   top: 0;
-  right: 68%;
-  width: 50%;
+  right: 78%;
+  width: 55%;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -448,7 +442,7 @@ li {
   pointer-events: none;
   position: absolute;
   top: 0;
-  right: 60%;
+  right: 75%;
   width: 50%;
   height: 100%;
   object-fit: cover;
@@ -461,7 +455,7 @@ li {
   position: absolute;
   top: 0;
   right: 70%;
-  width: 50%;
+  width: 75%;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -662,10 +656,8 @@ h6 {
   object-position: center;
   z-index: 1;
   top: 0;
-}
-.background-container {
   left: 60%;
-  width: 50%;
+  width: 60%;
 }
 .experience-image-container {
   mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
@@ -884,7 +876,9 @@ svg {
 }
 #navigation li a {
   color: #fff;
-  font-size: 1rem !important;
+  font-size: .875rem !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 .nav-link {
   display: inline;
@@ -892,6 +886,7 @@ svg {
   margin: auto;
   color: #fff;
 }
+
 .nav-link:after {
   content: "";
   width: 0;
